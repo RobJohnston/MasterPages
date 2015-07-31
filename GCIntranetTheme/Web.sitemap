@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="/default.aspx" title="Home"  description="">
+    <siteMapNode url="/v4.0/demos/" title="Working examples"  description="">
+      <siteMapNode url="/themes/dist/theme-gc-intranet/" title="Government of Canada Intranet theme"  description="">
+        <siteMapNode url="/content.aspx" title="Content page"  description=""/>
+        <siteMapNode url="/content2.aspx" title="Content page #2"  description=""/>
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

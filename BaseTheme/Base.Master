@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Base.master.cs" Inherits="GCWeb.Base" MasterPageFile="~/WET-BOEW.Master" %>
+<%@ MasterType VirtualPath="~/WET-BOEW.Master" %>
+<%@ Register Src="~/Controls/LanguageSelection-Base.ascx" TagPrefix="uc1" TagName="LanguageSelectionBase" %>
+<%@ Register Src="~/Controls/SearchAndMenus.ascx" TagPrefix="uc1" TagName="SearchAndMenus" %>
+<%@ Register Src="~/Controls/Search-Base.ascx" TagPrefix="uc1" TagName="SearchBase" %>
+<%@ Register Src="~/Controls/SiteMenu.ascx" TagPrefix="uc1" TagName="SiteMenu" %>
+<%@ Register Src="~/Controls/Breadcrumb.ascx" TagPrefix="uc1" TagName="Breadcrumb" %>
+<%@ Register Src="~/Controls/DateModified.ascx" TagPrefix="uc1" TagName="DateModified" %>
+<%@ Register Src="~/Controls/Footer-Base.ascx" TagPrefix="uc1" TagName="FooterBase" %>
+
+<asp:Content ID="ContentMetaData" runat="server" ContentPlaceHolderID="MetaData"></asp:Content>
+<asp:Content ID="ContentHead" runat="server" ContentPlaceHolderID="Head"></asp:Content>
+<asp:Content ID="ContentBody" runat="server" ContentPlaceHolderID="Body"></asp:Content>
+
+<asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="Header">
+<div id="wb-bnr">
+<div id="wb-bar">
+<div class="container">
+<div class="row">
+    <uc1:LanguageSelectionBase runat="server" id="LanguageSelectionBase" />
+    <uc1:SearchAndMenus runat="server" id="SearchAndMenus" />
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div id="wb-sttl" class="col-md-8">
+<a href="http://wet-boew.github.io/v4.0-ci/index-en.html">
+<span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
+</a>
+</div>
+    <uc1:SearchBase runat="server" id="SearchBase" />
+</div>
+</div>
+</div>
+    <uc1:SiteMenu runat="server" id="SiteMenu" />
+    <uc1:Breadcrumb runat="server" id="Breadcrumb" />    
+</asp:Content>
+
+<asp:Content ID="ContentMain" runat="server" ContentPlaceHolderID="Main">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+</asp:Content>
+
+<asp:Content ID="ContentPageDetails" runat="server" ContentPlaceHolderID="PageDetails">
+    <uc1:DateModified runat="server" id="DateModified" />
+</asp:Content>
+
+<asp:Content ID="ContentFooter" runat="server" ContentPlaceHolderID="Footer">
+    <uc1:FooterBase runat="server" id="FooterBase" />
+</asp:Content>

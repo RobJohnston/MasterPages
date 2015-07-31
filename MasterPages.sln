@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCIntranetTheme", "GCIntranetTheme\GCIntranetTheme.csproj", "{D76FE7E6-12B0-4BBC-A868-EA3E377EE12D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCWebUsabilityTheme", "GCWebUsabilityTheme\GCWebUsabilityTheme.csproj", "{0CEC89CA-A421-4169-9A21-831348466077}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCWebTheme", "GCWebTheme\GCWebTheme.csproj", "{9C7F68D7-1E16-4905-BD14-70E688929FB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D76FE7E6-12B0-4BBC-A868-EA3E377EE12D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D76FE7E6-12B0-4BBC-A868-EA3E377EE12D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D76FE7E6-12B0-4BBC-A868-EA3E377EE12D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D76FE7E6-12B0-4BBC-A868-EA3E377EE12D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CEC89CA-A421-4169-9A21-831348466077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CEC89CA-A421-4169-9A21-831348466077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CEC89CA-A421-4169-9A21-831348466077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CEC89CA-A421-4169-9A21-831348466077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7F68D7-1E16-4905-BD14-70E688929FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7F68D7-1E16-4905-BD14-70E688929FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7F68D7-1E16-4905-BD14-70E688929FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7F68D7-1E16-4905-BD14-70E688929FB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
