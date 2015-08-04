@@ -9,8 +9,6 @@
 <%@ Register Src="~/Controls/Aside.ascx" TagPrefix="uc1" TagName="Aside" %>
 <%@ Register Src="~/Controls/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
 
-<asp:Content ID="ContentMetaData" ContentPlaceHolderID="MetaData" runat="server"></asp:Content>
-
 <asp:Content ID="ContentHead" ContentPlaceHolderID="Head" runat="server">
 <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
 <script>dataLayer1 = [];</script>

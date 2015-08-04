@@ -13,13 +13,13 @@ namespace GCIntranetTheme {
     public partial class GCIntranet {
         
         /// <summary>
-        /// LanguageSelectionGCIntranet control.
+        /// LanguageSelection control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::GCIntranetTheme.Controls.LanguageSelection_GCIntranet LanguageSelectionGCIntranet;
+        protected global::GCIntranetTheme.Controls.LanguageSelection LanguageSelection;
         
         /// <summary>
         /// SearchAndMenus control.
@@ -31,13 +31,13 @@ namespace GCIntranetTheme {
         protected global::GCIntranetTheme.Controls.SearchAndMenus SearchAndMenus;
         
         /// <summary>
-        /// SearchGCIntranet control.
+        /// Search control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::GCIntranetTheme.Controls.Search_GCIntranet SearchGCIntranet;
+        protected global::GCIntranetTheme.Controls.Search Search;
         
         /// <summary>
         /// SiteMenu control.
@@ -76,13 +76,13 @@ namespace GCIntranetTheme {
         protected global::GCIntranetTheme.Controls.DateModified DateModified;
         
         /// <summary>
-        /// FooterGCIntranet control.
+        /// Footer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::GCIntranetTheme.Controls.Footer_GCIntranet FooterGCIntranet;
+        protected global::GCIntranetTheme.Controls.Footer Footer;
         
         /// <summary>
         /// Master property.

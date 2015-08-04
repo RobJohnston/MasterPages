@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -20,7 +19,7 @@ namespace GCWebTheme.Controls
         /// </summary>
         /// <remarks>
         /// Current standard on the WET site is to use two-letter languages.
-        /// This assumes only English and French will be available.
+        /// The method below assumes only English and French will be available.
         /// No test is done to see if the translated page actually exists.
         /// </remarks>
         private void SetLanguageSelection()

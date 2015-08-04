@@ -13,21 +13,48 @@ namespace GCIntranetTheme.Controls {
     public partial class SiteMenu {
         
         /// <summary>
-        /// YesSiteMenu control.
+        /// PlaceHolderSiteMenu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder YesSiteMenu;
+        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderSiteMenu;
         
         /// <summary>
-        /// NoSiteMenu control.
+        /// PlaceHolderEnglish control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder NoSiteMenu;
+        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderEnglish;
+        
+        /// <summary>
+        /// PlaceHolderFrench control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderFrench;
+        
+        /// <summary>
+        /// LocalizeTopicsMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Localize LocalizeTopicsMenu;
+        
+        /// <summary>
+        /// PlaceHolderNoSiteMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderNoSiteMenu;
     }
 }

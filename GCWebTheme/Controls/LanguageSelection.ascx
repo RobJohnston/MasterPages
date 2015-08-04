@@ -4,7 +4,7 @@
 <div class="row">
 <div class="col-md-12">
 <ul class="list-inline margin-bottom-none">
-<li><asp:HyperLink ID="HyperLinkLanguage1" runat="server" lang="fr" Text="Français" meta:resourcekey="HyperLinkLanguage1Resource1" /></li>
+<li><asp:HyperLink ID="HyperLinkLanguage1" runat="server" lang="fr" Text="Français" /></li>
 </ul>
 </div>
 </div>

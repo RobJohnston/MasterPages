@@ -44,7 +44,41 @@ namespace GCWebTheme
         #endregion
 
         #region Public properties
-        public virtual string DateCreated
+        /// <summary>
+        /// An entity primarily responsible for making the resource.
+        /// </summary>
+        public virtual string Creator
+        {
+            get
+            {
+                string str = ViewState["PageCreator"] as string;
+                if (str == null)
+                {
+                    //REVIEW:  Edit as appropriate.
+                    if (this.Language == "fr")
+                    {
+                        return "Gouvernement du Canada, Citoyenneté et Immigration Canada";
+                    }
+                    else
+                    {
+                        return "Government of Canada, Citizenship and Immigration Canada";
+                    }
+                }
+                else
+                {
+                    return str;
+                }
+            }
+            set
+            {
+                ViewState["PageCreator"] = value;
+            }
+        }
+
+        /// <summary>
+        /// Date of creation of the resource.
+        /// </summary>
+        public virtual string Created
         {
             get
             {
@@ -63,16 +97,19 @@ namespace GCWebTheme
             }
         }
 
-        public virtual string DateModified
+        /// <summary>
+        /// Date on which the resource was changed.
+        /// </summary>
+        public virtual string Modified
         {
             get
             {
                 string str = ViewState["PageDateModified"] as string;
-                if (str == null) 
+                if (str == null)
                 {
                     System.IO.FileInfo objInfo = new System.IO.FileInfo(Server.MapPath(Request.ServerVariables.Get("SCRIPT_NAME")));
                     return String.Format("{0:yyyy-MM-dd}", objInfo.LastWriteTime.Date);
-                }                    
+                }
                 else
                     return str;
             }
@@ -82,6 +119,35 @@ namespace GCWebTheme
             }
         }
 
+        /// <summary>
+        /// Date of formal issuance (e.g., publication) of the resource.
+        /// </summary>
+        /// <remarks>
+        /// Defaults to Date Created.
+        /// </remarks>
+        public virtual string Issued
+        {
+            get
+            {
+                string str = ViewState["PageDateIssued"] as string;
+                if (str == null)
+                {
+                    return this.Created;
+                }
+                else
+                {
+                    return str;
+                }
+            }
+            set
+            {
+                ViewState["PageDateIssued"] = value;
+            }
+        }
+
+        /// <summary>
+        /// A language of the resource.
+        /// </summary>
         public virtual string Language
         {
             get
@@ -108,7 +174,30 @@ namespace GCWebTheme
                 ViewState["PageLanguage"] = value;
             }
         }
-        #endregion
 
+        /// <summary>
+        /// The topic of the resource.
+        /// </summary>
+        public virtual string Subject
+        {
+            get
+            {
+                string str = ViewState["PageSubject"] as string;
+                if (str == null)
+                {
+                    //REVIEW:  Edit as appropriate.
+                    return "Citizenship; Immigration";
+                }
+                else
+                {
+                    return str;
+                }
+            }
+            set
+            {
+                ViewState["PageSubject"] = value;
+            }
+        }
+        #endregion
     }
 }

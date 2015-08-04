@@ -22,24 +22,6 @@ namespace GCIntranetTheme {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder MetaData;
         
         /// <summary>
-        /// Head control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Head;
-        
-        /// <summary>
-        /// Body control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Body;
-        
-        /// <summary>
         /// TopOfPage control.
         /// </summary>
         /// <remarks>
@@ -65,15 +47,6 @@ namespace GCIntranetTheme {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder Main;
-        
-        /// <summary>
-        /// PageDetails control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder PageDetails;
         
         /// <summary>
         /// Footer control.

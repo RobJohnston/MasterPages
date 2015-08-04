@@ -1885,6 +1885,12 @@
   <ItemGroup>
     <Content Include="App_LocalResources\GCWeb-SectionMenu.master.fr.resx" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\App_LocalResources\Breadcrumb.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\App_LocalResources\Breadcrumb.ascx.fr.resx" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -16,12 +16,36 @@ namespace GCWebTheme
         }
 
         #region Public Properties
+        public string PageCreator
+        {
+            get { return ((BasePage)Page).Creator; }
+        }
+
+        public string PageIssued
+        {
+            get { return ((BasePage)Page).Issued; }
+        }
+
+        public string PageModified
+        {
+            get { return ((BasePage)Page).Modified; }
+        }
+
+        public string PageSubject
+        {
+            get { return ((BasePage)Page).Subject; }
+        }
+
+        public string ThreeLetterLangName
+        {
+            get { return Thread.CurrentThread.CurrentUICulture.ThreeLetterISOLanguageName; }
+        }
 
         public string TwoLetterLangName
         {
             //get { return Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName; }
             get { return ((BasePage)Page).Language; }
-        } 
+        }
         #endregion
     }
 }

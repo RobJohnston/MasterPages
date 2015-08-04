@@ -22,9 +22,10 @@ namespace GCWebTheme.Controls
 
             //Set the starting node level of the sitemap.
             //NOTE:  The intention of a side menu is apparently to show siblings, not children, 
-            //       but in practice, it does show children in a nested unordered list.
+            //       but in practice, it does show children in a nested unordered list.  However,
+            //       this is being discussed further.
             //SEE:  https://github.com/wet-boew/GCWeb/issues/776#issuecomment-65173962
-            //      http://www.cic.gc.ca/english/visit/apply-who.asp
+            //      https://github.com/wet-boew/GCWeb/issues/995
             SiteMapDataSource1.StartingNodeOffset = CurrentNodeLevel - 1;
         }
 

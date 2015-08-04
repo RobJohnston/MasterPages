@@ -9,18 +9,25 @@
 <%@ Register Src="~/Controls/DateModified.ascx" TagPrefix="uc1" TagName="DateModified" %>
 <%@ Register Src="~/Controls/Footer-Base.ascx" TagPrefix="uc1" TagName="FooterBase" %>--%>
 
-<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
-<html class="no-js" lang="en" dir="ltr">
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="<%=this.TwoLetterLangName %>" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="<%=this.TwoLetterLangName %>" dir="ltr">
 <!--<![endif]-->
 <head runat="server">
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-<title>Base theme - Themes - Documentation - Web Experience Toolkit</title>
+<title>Content page - Government of Canada Intranet theme - Working examples - Web Experience Toolkit</title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
 <!-- Meta data -->
-<meta name="description" content="">
-<asp:ContentPlaceHolder ID="MetaData" runat="server" />
+<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+<asp:ContentPlaceHolder ID="MetaData" runat="server">
+<meta name="dcterms.title" content="<%=Page.Title %>">
+<meta name="dcterms.creator" content="<%=this.PageCreator %>">
+<meta name="dcterms.issued" title="W3CDTF" content="<%=this.PageIssued %>">
+<meta name="dcterms.modified" title="W3CDTF" content="<%=this.PageModified %>">
+<meta name="dcterms.subject" title="scheme" content="<%=this.PageSubject %>">
+<meta name="dcterms.language" title="ISO639-2" content="<%=this.ThreeLetterLangName %>">
+</asp:ContentPlaceHolder>
 <!-- Meta data-->
 <!--[if gte IE 9 | !IE ]><!-->
 <link href="/wet-v4/dist/assets/favicon.ico" rel="icon" type="image/x-icon">
@@ -33,19 +40,13 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <script src="/wet-v4/dist/wet-boew/js/ie8-wet-boew.min.js"></script>
 <![endif]-->
 <noscript><link rel="stylesheet" href="/wet-v4/dist/wet-boew/css/noscript.min.css" /></noscript>
-<asp:ContentPlaceHolder ID="Head" runat="server" />
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
-<asp:ContentPlaceHolder ID="Body" runat="server" />
     <uc1:TopOfPage runat="server" id="TopOfPage" />
 <header role="banner">
 <asp:ContentPlaceHolder ID="Header" runat="server" />
 </header>
-<main role="main" property="mainContentOfPage" class="container">
-<h1 id="wb-cont" property="name"><%=Page.Title %></h1>
 <asp:ContentPlaceHolder ID="Main" runat="server" />
-<asp:ContentPlaceHolder ID="PageDetails" runat="server" />
-</main>
 <asp:ContentPlaceHolder ID="Footer" runat="server" />
 <!--[if gte IE 9 | !IE ]><!-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>

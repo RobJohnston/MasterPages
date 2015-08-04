@@ -22,6 +22,8 @@ namespace GCWebTheme.Controls
                 PlaceHolderEnglish.Visible = true;
                 PlaceHolderFrench.Visible = false;
             }
+
+            //REVIEW:  There may be a benefit in creating a sitemenu for the top nav to make a fix easier if the links were to change.
         }
     }
 }

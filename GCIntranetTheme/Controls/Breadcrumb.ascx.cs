@@ -4,42 +4,58 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-//using System.Globalization;
 
 namespace GCIntranetTheme.Controls
 {
     public partial class Breadcrumb : System.Web.UI.UserControl
     {
+        protected string myProvider = "EnglishSiteMapProvider";
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (CultureInfo.CurrentCulture.Name.Contains("fr"))
-            //{
-            //    smpBC.SiteMapProvider = "FrenchSitemapProvider";
-            //}
-            //else
-            //{
-            //    smpBC.SiteMapProvider = "EnglishSitemapProvider";
-            //}
+            //Set the sitemap provider
+            if (((BasePage)Page).Language == "fr")
+            {
+                myProvider = "FrenchSiteMapProvider";
+            }
+            SiteMapDataSource1.SiteMapProvider = myProvider;
+
+            //Create the bulleted list
+            BreadcrumbListItems.Text = string.Format("<li><a href=\"{0}\">{1}</a></li>{2}", SiteMap.Providers[myProvider].RootNode.Url, SiteMap.Providers[myProvider].RootNode.Title, DisplaySiteMapLevelAsBulletedList());
         }
 
-        //public string SiteMap()
-        //{
-        //    return ListChildNodes(System.Web.SiteMap.RootNode);
-        //}
-        //private string ListChildNodes(System.Web.SiteMapNode node)
-        //{
-        //    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+        private string DisplaySiteMapLevelAsBulletedList()
+        {
+            //Get the SiteMapDataSourceView from the siteMapData SiteMapDataSource
+            SiteMapDataSourceView siteMapView = (SiteMapDataSourceView)SiteMapDataSource1.GetView(string.Empty);
 
-        //    sb.Append("<ol class='breadcrumb'>");
-        //    foreach (SiteMapNode item in node.ChildNodes)
-        //    {
-        //        sb.Append(string.Concat("<li><a href=\"", item.Url, "\">", item.Title, "</a></li>"));
-        //        if (item.HasChildNodes)
-        //            sb.Append(ListChildNodes(item));
-        //    }
-        //    sb.Append("</ol>");
+            //Get the SiteMapNodeCollection from the SiteMapDataSourceView
+            SiteMapNodeCollection nodes = (SiteMapNodeCollection)siteMapView.Select(DataSourceSelectArguments.Empty);
 
-        //    return sb.ToString();
-        //}
+            //Recurse through the SiteMapNodeCollection...
+            return GetSiteMapLevelAsBulletedList(nodes);
+        }
+
+        private string GetSiteMapLevelAsBulletedList(SiteMapNodeCollection nodes)
+        {
+            string output = string.Empty;
+            foreach (SiteMapNode node in nodes)
+            {
+                if (SiteMap.Providers[myProvider].CurrentNode.IsDescendantOf(node) || SiteMap.Providers[myProvider].CurrentNode == node)
+                {
+                    output += string.Format("<li><a href=\"{0}\">{1}</a>", node.Url, node.Title);
+
+                    //Add any children levels, if needed (recursively)
+                    if (node.HasChildNodes)
+                    {
+                        output += GetSiteMapLevelAsBulletedList(node.ChildNodes);
+                    }
+
+                    output += "</li>";
+                }
+            }
+
+            return output;
+        }
     }
 }

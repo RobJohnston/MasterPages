@@ -11,7 +11,7 @@ namespace GCWebTheme.Controls
     {
         public string PageDateModified
         {
-            get { return ((BasePage)Page).DateModified; }
+            get { return ((BasePage)Page).Modified; }
         }
 
     }
