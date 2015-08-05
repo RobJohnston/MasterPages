@@ -117,24 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="HyperLinkResource1.NavigateUrl" xml:space="preserve">
-    <value>./index-fr.htm</value>
-  </data>
-  <data name="HyperLinkResource1.Text" xml:space="preserve">
-    <value>Projet de la BOEW</value>
-  </data>
-  <data name="HyperLinkResource2.NavigateUrl" xml:space="preserve">
-    <value>./docs/start-fr.html#implement</value>
-  </data>
-  <data name="HyperLinkResource2.Text" xml:space="preserve">
-    <value>Mise en œuvre de la BOEW</value>
-  </data>
-  <data name="HyperLinkResource3.NavigateUrl" xml:space="preserve">
-    <value>./docs/start-fr.html</value>
-  </data>
-  <data name="HyperLinkResource3.Text" xml:space="preserve">
-    <value>Contribuer à la BOEW</value>
-  </data>
   <data name="LocalizeTopicsMenuResource1.Text" xml:space="preserve">
     <value>Menu des sujets</value>
   </data>

@@ -117,54 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="HyperLinkResource1.NavigateUrl" xml:space="preserve">
-    <value>http://www.esdc.gc.ca/en/jobs/index.page</value>
-  </data>
-  <data name="HyperLinkResource1.Text" xml:space="preserve">
-    <value>Jobs</value>
-  </data>
-  <data name="HyperLinkResource2.NavigateUrl" xml:space="preserve">
-    <value>http://www.cic.gc.ca/english/index.asp</value>
-  </data>
-  <data name="HyperLinkResource2.Text" xml:space="preserve">
-    <value>Immigration</value>
-  </data>
-  <data name="HyperLinkResource3.NavigateUrl" xml:space="preserve">
-    <value>http://travel.gc.ca</value>
-  </data>
-  <data name="HyperLinkResource3.Text" xml:space="preserve">
-    <value>Travel</value>
-  </data>
-  <data name="HyperLinkResource4.NavigateUrl" xml:space="preserve">
-    <value>http://www.canada.ca/en/services/business/index.html</value>
-  </data>
-  <data name="HyperLinkResource4.Text" xml:space="preserve">
-    <value>Business</value>
-  </data>
-  <data name="HyperLinkResource5.NavigateUrl" xml:space="preserve">
-    <value>http://www.canada.ca/en/services/benefits/index.html</value>
-  </data>
-  <data name="HyperLinkResource5.Text" xml:space="preserve">
-    <value>Benefits</value>
-  </data>
-  <data name="HyperLinkResource6.NavigateUrl" xml:space="preserve">
-    <value>http://healthycanadians.gc.ca/index-eng.php</value>
-  </data>
-  <data name="HyperLinkResource6.Text" xml:space="preserve">
-    <value>Health</value>
-  </data>
-  <data name="HyperLinkResource7.NavigateUrl" xml:space="preserve">
-    <value>http://www.canada.ca/en/services/taxes/index.html</value>
-  </data>
-  <data name="HyperLinkResource7.Text" xml:space="preserve">
-    <value>Taxes</value>
-  </data>
-  <data name="HyperLinkResource8.NavigateUrl" xml:space="preserve">
-    <value>http://www.canada.ca/en/services/index.html</value>
-  </data>
-  <data name="HyperLinkResource8.Text" xml:space="preserve">
-    <value>More services</value>
-  </data>
   <data name="LocalizeTopicsMenuResource1.Text" xml:space="preserve">
     <value>Topics menu</value>
   </data>

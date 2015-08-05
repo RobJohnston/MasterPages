@@ -76,6 +76,9 @@ namespace GCIntranetTheme
         /// <summary>
         /// Date of creation of the resource.
         /// </summary>
+        /// <remarks>
+        /// Default is file system's creation date.
+        /// </remarks>
         public virtual string Created
         {
             get
@@ -98,6 +101,9 @@ namespace GCIntranetTheme
         /// <summary>
         /// Date on which the resource was changed.
         /// </summary>
+        /// <remarks>
+        /// Default is file system's last write time date.
+        /// </remarks>
         public virtual string Modified
         {
             get
@@ -121,8 +127,9 @@ namespace GCIntranetTheme
         /// Date of formal issuance (e.g., publication) of the resource.
         /// </summary>
         /// <remarks>
-        /// Defaults to Date Created.
+        /// Default is Created date.
         /// </remarks>
+        /// <see cref="Created"/>
         public virtual string Issued
         {
             get
@@ -146,6 +153,9 @@ namespace GCIntranetTheme
         /// <summary>
         /// A language of the resource.
         /// </summary>
+        /// <remarks>
+        /// Two-letter language. Default is English ("en").
+        /// </remarks>
         public virtual string Language
         {
             get
@@ -184,7 +194,14 @@ namespace GCIntranetTheme
                 if (str == null)
                 {
                     //REVIEW:  Edit as appropriate.
-                    return "Citizenship; Immigration";
+                    if (this.Language == "fr")
+                    {
+                        return "Citoyenneté; Immigration; Multiculturalisme";
+                    }
+                    else
+                    {
+                        return "Citizenship; Immigration; Multiculturalism";
+                    }
                 }
                 else
                 {

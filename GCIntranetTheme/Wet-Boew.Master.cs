@@ -36,6 +36,24 @@ namespace GCIntranetTheme
             get { return ((BasePage)Page).Subject; }
         }
 
+        public string TextDir
+        {
+            get
+            {
+                string textDirection = "ltr";
+
+                //Read the text direction from the custom web.config section.
+                WetBoewConfiguration config = (WetBoewConfiguration)System.Configuration.ConfigurationManager.GetSection("WetBoewGroup/WetBoew");
+
+                if (config != null)
+                {
+                    textDirection = config.TextDirection;
+                }
+
+                return textDirection;
+            }
+        }
+
         public string ThreeLetterLangName
         {
             get { return Thread.CurrentThread.CurrentUICulture.ThreeLetterISOLanguageName; }

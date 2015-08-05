@@ -13,6 +13,15 @@ namespace GCIntranetTheme {
     public partial class GCIntranet_SecondaryMenu {
         
         /// <summary>
+        /// gcwu_sig control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal gcwu_sig;
+        
+        /// <summary>
         /// LanguageSelection control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,24 @@ namespace GCIntranetTheme {
         protected global::GCIntranetTheme.Controls.SearchAndMenus SearchAndMenus;
         
         /// <summary>
+        /// HyperLinkSiteTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkSiteTitle;
+        
+        /// <summary>
+        /// wmms control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal wmms;
+        
+        /// <summary>
         /// Search control.
         /// </summary>
         /// <remarks>
@@ -38,6 +65,15 @@ namespace GCIntranetTheme {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::GCIntranetTheme.Controls.Search Search;
+        
+        /// <summary>
+        /// SubSite control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::GCIntranetTheme.Controls.SubSite SubSite;
         
         /// <summary>
         /// SiteMenu control.

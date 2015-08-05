@@ -1746,6 +1746,7 @@
     <Compile Include="WET-BOEW.Master.designer.cs">
       <DependentUpon>Wet-Boew.Master</DependentUpon>
     </Compile>
+    <Compile Include="WetBoewConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="GCWeb.master" />
@@ -1756,6 +1757,10 @@
     <Content Include="partners\Web.sitemap" />
     <Content Include="partners\Web.fr.sitemap" />
     <Content Include="partners\Web.config" />
+    <Content Include="Footer.sitemap" />
+    <Content Include="Footer.fr.sitemap" />
+    <Content Include="Header.sitemap" />
+    <Content Include="Header.fr.sitemap" />
     <None Include="partners\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

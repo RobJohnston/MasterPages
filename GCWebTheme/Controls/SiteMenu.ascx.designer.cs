@@ -13,30 +13,30 @@ namespace GCWebTheme.Controls {
     public partial class SiteMenu {
         
         /// <summary>
-        /// PlaceHolderEnglish control.
+        /// SiteMapDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderEnglish;
+        protected global::System.Web.UI.WebControls.SiteMapDataSource SiteMapDataSource1;
         
         /// <summary>
-        /// PlaceHolderFrench control.
+        /// Localize1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderFrench;
+        protected global::System.Web.UI.WebControls.Localize Localize1;
         
         /// <summary>
-        /// LocalizeTopicsMenu control.
+        /// Repeater1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Localize LocalizeTopicsMenu;
+        protected global::System.Web.UI.WebControls.Repeater Repeater1;
     }
 }

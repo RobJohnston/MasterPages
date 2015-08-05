@@ -186,7 +186,14 @@ namespace GCWebTheme
                 if (str == null)
                 {
                     //REVIEW:  Edit as appropriate.
-                    return "Citizenship; Immigration";
+                    if (this.Language == "fr")
+                    {
+                        return "Citoyenneté; Immigration; Multiculturalisme";
+                    }
+                    else
+                    {
+                        return "Citizenship; Immigration; Multiculturalism";
+                    }
                 }
                 else
                 {

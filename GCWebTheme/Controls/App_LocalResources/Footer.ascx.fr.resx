@@ -117,24 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="HyperLink1AResource1.Text" xml:space="preserve">
-    <value>Lien 1</value>
-  </data>
-  <data name="HyperLink1AResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="HyperLink1BResource1.Text" xml:space="preserve">
-    <value>Lien 2</value>
-  </data>
-  <data name="HyperLink1BResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="HyperLink1CResource1.Text" xml:space="preserve">
-    <value>Lien 3</value>
-  </data>
-  <data name="HyperLink1CResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="HyperLink2AResource1.Text" xml:space="preserve">
     <value>Salle de presse</value>
   </data>
@@ -278,9 +260,6 @@
   </data>
   <data name="HyperLinkSocialResource1.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="Localize1Resource1.Text" xml:space="preserve">
-    <value>Coordonnées</value>
   </data>
   <data name="Localize2Resource1.Text" xml:space="preserve">
     <value>Nouvelles</value>

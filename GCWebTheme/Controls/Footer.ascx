@@ -1,17 +1,36 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Footer.ascx.cs" Inherits="GCWebTheme.Controls.Footer" %>
+<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="true" />
 <footer role="contentinfo" id="wb-info">
 <nav role="navigation" class="container visible-sm visible-md visible-lg wb-navcurr">
 <h2 class="wb-inv"><asp:Localize ID="LocalizeAbout" runat="server" Text="About this site" meta:resourcekey="LocalizeAboutResource1" /></h2>
 <div class="row">
 <div class="col-sm-3 col-lg-3">
-<section>
-<h3><asp:Localize ID="Localize1" runat="server" Text="Contact information" meta:resourcekey="Localize1Resource1" /></h3>
-<ul class="list-unstyled">
-<li><asp:HyperLink ID="HyperLink1A" runat="server" NavigateUrl="#" Text="Link 1" meta:resourcekey="HyperLink1AResource1" /></li>
-<li><asp:HyperLink ID="HyperLink1B" runat="server" NavigateUrl="#" Text="Link 2" meta:resourcekey="HyperLink1BResource1" /></li>
-<li><asp:HyperLink ID="HyperLink1C" runat="server" NavigateUrl="#" Text="Link 3" meta:resourcekey="HyperLink1CResource1" /></li>
-</ul>
-</section>
+<asp:Repeater ID="Repeater1" runat="server" DataSourceID="SiteMapDataSource1">
+    <HeaderTemplate>
+        
+    </HeaderTemplate>
+
+    <ItemTemplate>
+        <section>
+        <h3><%# Eval("Title") %></h3>
+            <asp:Repeater runat="server" DataSource='<%# ((SiteMapNode) Container.DataItem).ChildNodes %>'>
+                <HeaderTemplate>
+                    <ul class="list-unstyled">
+                </HeaderTemplate>
+                <ItemTemplate>
+                    <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("Url") %>'> <%# Eval("Title") %></asp:HyperLink></li>
+                </ItemTemplate>
+                <FooterTemplate>
+                    </ul>
+                </FooterTemplate>
+            </asp:Repeater>
+        </section>
+    </ItemTemplate>
+
+    <FooterTemplate>
+        
+    </FooterTemplate>
+</asp:Repeater>
 <section>
 <h3><asp:Localize ID="Localize2" runat="server" Text="News" meta:resourcekey="Localize2Resource1" /></h3>
 <ul class="list-unstyled">

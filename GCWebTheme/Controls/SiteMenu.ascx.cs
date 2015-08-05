@@ -9,21 +9,25 @@ namespace GCWebTheme.Controls
 {
     public partial class SiteMenu : System.Web.UI.UserControl
     {
+        protected string myProvider = "EnglishHeaderSiteMapProvider";
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            //NOTE:  There doesn't seem to be a way to localize the data-ajax-replace attribute because the nav ID contains a dash.
+            //Set the sitemap provider.
             if (((BasePage)Page).Language == "fr")
             {
-                PlaceHolderEnglish.Visible = false;
-                PlaceHolderFrench.Visible = true;
-            }
-            else
-            {
-                PlaceHolderEnglish.Visible = true;
-                PlaceHolderFrench.Visible = false;
+                myProvider = "FrenchHeaderSiteMapProvider";
             }
 
-            //REVIEW:  There may be a benefit in creating a sitemenu for the top nav to make a fix easier if the links were to change.
+            SiteMapDataSource1.SiteMapProvider = myProvider;
+        }
+
+        protected string SiteMenuFile
+        {
+            get
+            {
+                return string.Format("/wet-v4/dist/ajax/sitemenu-{0}.html", ((BasePage)Page).Language);
+            }
         }
     }
 }

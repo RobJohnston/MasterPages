@@ -8,13 +8,15 @@
 <%@ Register Src="~/Controls/DateModified.ascx" TagPrefix="uc1" TagName="DateModified" %>
 <%@ Register Src="~/Controls/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
 <%@ Register Src="~/Controls/SectionMenu.ascx" TagPrefix="uc1" TagName="SectionMenu" %>
+<%@ Register Src="~/Controls/SubSite.ascx" TagPrefix="uc1" TagName="SubSite" %>
+
 
 <asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="Header">
-<div id="wb-bnr">
+    <div id="wb-bnr">
 <div id="wb-bar">
 <div class="container">
 <div class="row">
-<object id="gcwu-sig" type="image/svg+xml" tabindex="-1" role="img" data="./wet-v4/dist/assets/sig-blk-en.svg" aria-label="Government of Canada"></object>
+<asp:Literal ID="gcwu_sig" runat="server" meta:resourcekey="gcwu_sigResource1" Text="&lt;object id=&quot;gcwu-sig&quot; type=&quot;image/svg+xml&quot; tabindex=&quot;-1&quot; role=&quot;img&quot; data=&quot;./wet-v4/dist/assets/sig-blk-en.svg&quot; aria-label=&quot;Government of Canada&quot;&gt;&lt;/object&gt;"></asp:Literal>
     <uc1:LanguageSelection runat="server" id="LanguageSelection" />
     <uc1:SearchAndMenus runat="server" id="SearchAndMenus" />
 </div>
@@ -23,15 +25,16 @@
 <div class="container">
 <div class="row">
 <div id="wb-sttl" class="col-md-12">
-<a href="http://wet-boew.github.io/v4.0-ci/index-en.html">
+<asp:HyperLink ID="HyperLinkSiteTitle" runat="server" NavigateUrl="http://wet-boew.github.io/v4.0-ci/index-en.html">
 <span>Web Experience Toolkit</span>
-</a>
-<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="./wet-v4/dist/assets/wmms-intra.svg" aria-label="Symbol of the Government of Canada"></object>
+</asp:HyperLink>
+<asp:Literal ID="wmms" runat="server" meta:resourcekey="wmmsResource1" Text="&lt;object id=&quot;wmms&quot; type=&quot;image/svg+xml&quot; tabindex=&quot;-1&quot; role=&quot;img&quot; data=&quot;./wet-v4/dist/assets/wmms-intra.svg&quot; aria-label=&quot;Symbol of the Government of Canada&quot;&gt;&lt;/object&gt;"></asp:Literal>
 </div>
     <uc1:Search runat="server" id="Search" />
 </div>
 </div>
 </div>
+    <uc1:SubSite runat="server" ID="SubSite" Visible="false" />
     <uc1:SiteMenu runat="server" id="SiteMenu" />
     <uc1:Breadcrumb runat="server" id="Breadcrumb" />
 </asp:Content>

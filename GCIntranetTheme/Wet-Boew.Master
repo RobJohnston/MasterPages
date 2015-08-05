@@ -9,8 +9,8 @@
 <%@ Register Src="~/Controls/DateModified.ascx" TagPrefix="uc1" TagName="DateModified" %>
 <%@ Register Src="~/Controls/Footer-Base.ascx" TagPrefix="uc1" TagName="FooterBase" %>--%>
 
-<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="<%=this.TwoLetterLangName %>" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
-<html class="no-js" lang="<%=this.TwoLetterLangName %>" dir="ltr">
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="<%=this.TwoLetterLangName %>" dir="<%=this.TextDir %>"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="<%=this.TwoLetterLangName %>" dir="<%=this.TextDir %>">
 <!--<![endif]-->
 <head runat="server">
 <meta charset="utf-8">

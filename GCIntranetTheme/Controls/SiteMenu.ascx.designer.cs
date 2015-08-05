@@ -13,6 +13,15 @@ namespace GCIntranetTheme.Controls {
     public partial class SiteMenu {
         
         /// <summary>
+        /// SiteMapDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SiteMapDataSource SiteMapDataSource1;
+        
+        /// <summary>
         /// PlaceHolderSiteMenu control.
         /// </summary>
         /// <remarks>
@@ -22,24 +31,6 @@ namespace GCIntranetTheme.Controls {
         protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderSiteMenu;
         
         /// <summary>
-        /// PlaceHolderEnglish control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderEnglish;
-        
-        /// <summary>
-        /// PlaceHolderFrench control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderFrench;
-        
-        /// <summary>
         /// LocalizeTopicsMenu control.
         /// </summary>
         /// <remarks>
@@ -47,6 +38,15 @@ namespace GCIntranetTheme.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Localize LocalizeTopicsMenu;
+        
+        /// <summary>
+        /// Repeater1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater Repeater1;
         
         /// <summary>
         /// PlaceHolderNoSiteMenu control.

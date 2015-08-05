@@ -9,8 +9,17 @@ namespace GCWebTheme.Controls
 {
     public partial class Footer : System.Web.UI.UserControl
     {
+        protected string myProvider = "EnglishFooterSiteMapProvider";
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Set the sitemap provider.
+            if (((BasePage)Page).Language == "fr")
+            {
+                myProvider = "FrenchFooterSiteMapProvider";
+            }
+            SiteMapDataSource1.SiteMapProvider = myProvider;
+
             //NOTE:  There doesn't seem to be a better way to localize the aria-label attribute of the object tag.
             if (((BasePage)Page).Language == "fr")
             {

@@ -67,6 +67,7 @@
     <Content Include="Controls\SearchAndMenus.ascx" />
     <Content Include="Controls\SectionMenu.ascx" />
     <Content Include="Controls\SiteMenu.ascx" />
+    <Content Include="Controls\SubSite.ascx" />
     <Content Include="Controls\TopOfPage.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.sitemap">
@@ -1627,6 +1628,13 @@
     <Compile Include="Controls\SiteMenu.ascx.designer.cs">
       <DependentUpon>SiteMenu.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\SubSite.ascx.cs">
+      <DependentUpon>SubSite.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SubSite.ascx.designer.cs">
+      <DependentUpon>SubSite.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\TopOfPage.ascx.cs">
       <DependentUpon>TopOfPage.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1656,12 +1664,15 @@
     <Compile Include="WET-BOEW.Master.designer.cs">
       <DependentUpon>Wet-Boew.Master</DependentUpon>
     </Compile>
+    <Compile Include="WetBoewConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="GCIntranet.Master" />
     <Content Include="GCIntranet-SectionMenu.master" />
     <Content Include="Footer.sitemap" />
     <Content Include="Footer.fr.sitemap" />
+    <Content Include="Header.sitemap" />
+    <Content Include="Header.fr.sitemap" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1737,6 +1748,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controls\App_LocalResources\TopOfPage.ascx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\GCIntranet-SectionMenu.master.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\GCIntranet-SectionMenu.master.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\GCIntranet.Master.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\GCIntranet.Master.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\App_LocalResources\SubSite.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\App_LocalResources\SubSite.ascx.fr.resx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
