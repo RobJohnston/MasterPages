@@ -101,17 +101,5 @@ namespace GCWebUsability {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::GCWebUsability.Controls.Footer_GCWebUsability FooterGCWebUsability;
-        
-        /// <summary>
-        /// Master property.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated property.
-        /// </remarks>
-        public new GCWebUsability.Wet_Boew Master {
-            get {
-                return ((GCWebUsability.Wet_Boew)(base.Master));
-            }
-        }
     }
 }

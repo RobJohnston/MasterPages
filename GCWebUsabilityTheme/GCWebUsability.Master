@@ -1,5 +1,4 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GCWebUsability.master.cs" Inherits="GCWebUsability.GCWebUsability" MasterPageFile="~/WET-BOEW.Master" %>
-<%@ MasterType virtualpath="~/Wet-Boew.Master" %>
 
 <%@ Register Src="~/Controls/TopOfPage.ascx" TagPrefix="uc1" TagName="TopOfPage" %>
 <%@ Register Src="~/Controls/LanguageSelectionGCWebUsability.ascx" TagPrefix="uc1" TagName="LanguageSelectionGCWebUsability" %>
