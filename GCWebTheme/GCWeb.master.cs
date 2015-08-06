@@ -13,11 +13,5 @@ namespace GCWebTheme
         {
             
         }
-
-        //public string TwoLetterLangName
-        //{
-        //    //get { return Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName; }
-        //    get { return ((BasePage)Page).Language; }
-        //} 
     }
 }

@@ -12,6 +12,9 @@ namespace GCIntranetTheme.Controls
         protected void Page_Load(object sender, EventArgs e)
         {
             SetLanguageSelection();
+
+            //TODO:  Hide the language selection link(s) if the WetBoewGroup/WetBoew/Languages section only has one language defined?
+            //TODO:  Create a language selection link for each language defined in WetBoewGroup/WetBoew/Languages section?
         }
 
         /// <summary>

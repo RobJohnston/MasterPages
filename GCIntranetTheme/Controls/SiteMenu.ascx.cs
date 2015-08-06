@@ -21,7 +21,7 @@ namespace GCIntranetTheme.Controls
 
             SiteMapDataSource1.SiteMapProvider = myProvider;
 
-            //TODO: Determine value of ShowSiteMenu and set the visibility of the two placeholders.
+            //TODO: Hide or show the site menu depending on the setting of WetBoewGroup/WetBoew/@siteMenu in web.config (or overridden by a page-level setting?).
             //Wet_BoewMasterPage theMaster = (Wet_BoewMasterPage)Page.Master;
 
             //if (theMaster.ShowSiteMenu == true)

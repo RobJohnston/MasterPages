@@ -3,10 +3,10 @@
 <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SiteMapDataSource1" OnItemDataBound="RepeaterItemEventHandler">
     <HeaderTemplate>
         <nav class="wb-sec col-md-3 col-md-pull-9" typeof="SiteNavigationElement" id="wb-sec" role="navigation">
-        <h2 id="wb-sec-h" class="wb-inv"><%= SiteMap.Providers[myProvider].CurrentNode.ParentNode.Title %></h2>
+        <h2 id="wb-sec-h" class="wb-inv"><%= this.SectionTitle %></h2>
         <ul class="list-group menu list-unstyled">
         <li>
-        <h3 class="wb-navcurr"><%= SiteMap.Providers[myProvider].CurrentNode.ParentNode.Title %></h3>
+        <h3 class="wb-navcurr"><%= this.SectionTitle %></h3>
         <ul class="list-group menu list-unstyled">
     </HeaderTemplate>
 

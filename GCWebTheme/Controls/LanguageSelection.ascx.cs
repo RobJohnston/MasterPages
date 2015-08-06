@@ -12,6 +12,8 @@ namespace GCWebTheme.Controls
         protected void Page_Load(object sender, EventArgs e)
         {
             SetLanguageSelection();
+
+            //TODO:  Create a language selection link for each language defined in WetBoewGroup/WetBoew/Languages section?
         }
 
         /// <summary>

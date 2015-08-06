@@ -20,18 +20,6 @@ namespace GCWebTheme.Controls
             }
             SiteMapDataSource1.SiteMapProvider = myProvider;
 
-            //NOTE:  There doesn't seem to be a better way to localize the aria-label attribute of the object tag.
-            if (((BasePage)Page).Language == "fr")
-            {
-                PlaceHolderEnglish.Visible = false;
-                PlaceHolderFrench.Visible = true;
-            }
-            else
-            {
-                PlaceHolderEnglish.Visible = true;
-                PlaceHolderFrench.Visible = false;
-            }
-
             //Change AppRelativeTemplateSourceDirectory to a root relative virtual path so that any relative paths in 
             //the UserControl will be relative to the requested page rather than the user controls path.
             //See http://stackoverflow.com/questions/2604636/relative-path-from-an-asp-net-user-control-navigateurl

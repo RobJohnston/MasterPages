@@ -7,7 +7,7 @@
         <siteMapNode url="link1b" title="Test1B" description="" />
       </siteMapNode>
       <!--<siteMapNode siteMapFile="~/partners/Web.sitemap" />-->
-      <siteMapNode url="link2" title="Article 2" description="">
+      <siteMapNode url="~/content-secmenu-fr.aspx" title="[FR] Content page - Secondary menu" description="">
         <siteMapNode url="link2a" title="Test2A" description="" />
         <siteMapNode url="link2b" title="Test2B" description="" />
       </siteMapNode>

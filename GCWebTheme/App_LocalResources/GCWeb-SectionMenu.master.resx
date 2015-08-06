@@ -123,4 +123,10 @@
   <data name="HyperLinkResource1.Text" xml:space="preserve">
     <value>&lt;object type="image/svg+xml" tabindex="-1" data="/wet-v4/dist/assets/sig-blk-en.svg"&gt;&lt;/object&gt;&lt;span class="wb-inv"&gt; Government of Canada&lt;/span&gt;</value>
   </data>
+  <data name="HyperLinkResource2.NavigateUrl" xml:space="preserve">
+    <value>http://www.canada.ca/en/contact/feedback.html</value>
+  </data>
+  <data name="HyperLinkResource2.Text" xml:space="preserve">
+    <value>&lt;span class="glyphicon glyphicon-comment mrgn-rght-sm"&gt;&lt;/span&gt;Feedback&lt;span class="wb-inv"&gt; about this web site&lt;/span&gt;</value>
+  </data>
 </root>

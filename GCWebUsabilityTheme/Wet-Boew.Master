@@ -1,14 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Wet-Boew.Master.cs" Inherits="GCWebUsability.Wet_Boew" %>
 
-<%@ Register Src="~/Controls/TopOfPage.ascx" TagPrefix="uc1" TagName="TopOfPage" %>
-<%--<%@ Register Src="~/Controls/LanguageSelection-Base.ascx" TagPrefix="uc1" TagName="LanguageSelectionBase" %>
-<%@ Register Src="~/Controls/SearchAndMenus.ascx" TagPrefix="uc1" TagName="SearchAndMenus" %>
-<%@ Register Src="~/Controls/Search-Base.ascx" TagPrefix="uc1" TagName="SearchBase" %>
-<%@ Register Src="~/Controls/SiteMenu.ascx" TagPrefix="uc1" TagName="SiteMenu" %>
-<%@ Register Src="~/Controls/Breadcrumb.ascx" TagPrefix="uc1" TagName="Breadcrumb" %>
-<%@ Register Src="~/Controls/DateModified.ascx" TagPrefix="uc1" TagName="DateModified" %>
-<%@ Register Src="~/Controls/Footer-Base.ascx" TagPrefix="uc1" TagName="FooterBase" %>--%>
-
 <!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
 <!--<![endif]-->
@@ -36,16 +27,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <asp:ContentPlaceHolder ID="Head" runat="server" />
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
-<asp:ContentPlaceHolder ID="Body" runat="server" />
-    <uc1:TopOfPage runat="server" id="TopOfPage" />
-<header role="banner">
+<asp:ContentPlaceHolder ID="TopOfPage" runat="server" />
 <asp:ContentPlaceHolder ID="Header" runat="server" />
-</header>
-<main role="main" property="mainContentOfPage" class="container">
-<h1 id="wb-cont" property="name"><%=Page.Title %></h1>
 <asp:ContentPlaceHolder ID="Main" runat="server" />
-<asp:ContentPlaceHolder ID="PageDetails" runat="server" />
-</main>
 <asp:ContentPlaceHolder ID="Footer" runat="server" />
 <!--[if gte IE 9 | !IE ]><!-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>

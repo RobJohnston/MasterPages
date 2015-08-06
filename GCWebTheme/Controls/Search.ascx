@@ -4,12 +4,7 @@
 <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
 <div class="form-group">
 <label for="wb-srch-q" class="wb-inv"><asp:Localize runat="server" Text="Search website" meta:resourcekey="LocalizeResource2" /></label>
-<asp:PlaceHolder ID="PlaceHolderEnglish" runat="server">
-<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="27" maxlength="150" placeholder="Search Canada.ca">
-    </asp:PlaceHolder>
-<asp:PlaceHolder ID="PlaceHolderFrench" runat="server" Visible="False">
-<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="27" maxlength="150" placeholder="Rechercher dans Canada.ca">
-    </asp:PlaceHolder>
+<asp:Localize runat="server" meta:resourcekey="LocalizeResource4"><input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="27" maxlength="150" placeholder="Search Canada.ca"></asp:Localize>
 <datalist id="wb-srch-q-ac">
 <!--[if lte IE 9]><select><![endif]-->
 <!--[if lte IE 9]></select><![endif]-->

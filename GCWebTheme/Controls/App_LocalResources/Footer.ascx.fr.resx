@@ -282,4 +282,7 @@
   <data name="LocalizeAboutResource1.Text" xml:space="preserve">
     <value>À propos de ce site</value>
   </data>
+  <data name="LocalizeWordMarkResource1.Text" xml:space="preserve">
+    <value>&lt;object type="image/svg+xml" tabindex="-1" role="img" data="/wet-v4/dist/assets/wmms-blk.svg" aria-label="Symbole du gouvernement du Canada"&gt;&lt;/object&gt;</value>
+  </data>
 </root>

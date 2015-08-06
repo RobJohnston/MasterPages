@@ -126,4 +126,7 @@
   <data name="LocalizeResource3.Text" xml:space="preserve">
     <value>Recherche</value>
   </data>
+  <data name="LocalizeResource4.Text" xml:space="preserve">
+    <value>&lt;input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="27" maxlength="150" placeholder="Rechercher dans Canada.ca"&gt;</value>
+  </data>
 </root>

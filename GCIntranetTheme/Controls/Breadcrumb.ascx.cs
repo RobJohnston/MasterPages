@@ -13,6 +13,8 @@ namespace GCIntranetTheme.Controls
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            //TODO: Hide or show the site menu depending on the setting of WetBoewGroup/WetBoew/@breadcrumbTrail in web.config (or overridden by a page-level setting?).
+
             //Set the sitemap provider
             if (((BasePage)Page).Language == "fr")
             {

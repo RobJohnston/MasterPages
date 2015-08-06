@@ -13,6 +13,15 @@ namespace GCWebTheme {
     public partial class GCWeb_SectionMenu {
         
         /// <summary>
+        /// TopOfPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::GCWebTheme.Controls.TopOfPage TopOfPage;
+        
+        /// <summary>
         /// LanguageSelection control.
         /// </summary>
         /// <remarks>
@@ -101,5 +110,17 @@ namespace GCWebTheme {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::GCWebTheme.Controls.Footer Footer;
+        
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new GCWebTheme.Wet_Boew Master {
+            get {
+                return ((GCWebTheme.Wet_Boew)(base.Master));
+            }
+        }
     }
 }

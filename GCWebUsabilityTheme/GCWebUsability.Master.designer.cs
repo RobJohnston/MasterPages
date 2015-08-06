@@ -7,10 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GCIntranetTheme {
+namespace GCWebUsability {
     
     
     public partial class GCWebUsability {
+        
+        /// <summary>
+        /// TopOfPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::GCWebUsability.Controls.TopOfPage TopOfPage;
         
         /// <summary>
         /// LanguageSelectionGCWebUsability control.
@@ -67,6 +76,15 @@ namespace GCIntranetTheme {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
         
         /// <summary>
+        /// PageDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder PageDetails;
+        
+        /// <summary>
         /// DateModified control.
         /// </summary>
         /// <remarks>
@@ -83,5 +101,17 @@ namespace GCIntranetTheme {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::GCWebUsability.Controls.Footer_GCWebUsability FooterGCWebUsability;
+        
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new GCWebUsability.Wet_Boew Master {
+            get {
+                return ((GCWebUsability.Wet_Boew)(base.Master));
+            }
+        }
     }
 }

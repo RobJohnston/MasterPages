@@ -90,12 +90,7 @@
 <asp:HyperLink runat="server" NavigateUrl="#wb-cont" meta:resourcekey="HyperLinkResource1">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></asp:HyperLink>
 </div>
 <div class="col-xs-6 col-md-12 text-right">
-<asp:PlaceHolder ID="PlaceHolderEnglish" runat="server">
-<object type="image/svg+xml" tabindex="-1" role="img" data="/wet-v4/dist/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"></object>
-</asp:PlaceHolder>
-<asp:PlaceHolder ID="PlaceHolderFrench" runat="server" Visible="False">
-<object type="image/svg+xml" tabindex="-1" role="img" data="/wet-v4/dist/assets/wmms-blk.svg" aria-label="Symbole du gouvernement du Canada"></object>
-</asp:PlaceHolder>
+<asp:Literal runat="server" meta:resourcekey="LocalizeWordMarkResource1"><object type="image/svg+xml" tabindex="-1" role="img" data="/wet-v4/dist/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"></object></asp:Literal>
 </div>
 </div>
 </div>

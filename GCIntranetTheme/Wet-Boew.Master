@@ -1,14 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Wet-Boew.Master.cs" Inherits="GCIntranetTheme.Wet_Boew" %>
 
-<%@ Register Src="~/Controls/TopOfPage.ascx" TagPrefix="uc1" TagName="TopOfPage" %>
-<%--<%@ Register Src="~/Controls/LanguageSelection-Base.ascx" TagPrefix="uc1" TagName="LanguageSelectionBase" %>
-<%@ Register Src="~/Controls/SearchAndMenus.ascx" TagPrefix="uc1" TagName="SearchAndMenus" %>
-<%@ Register Src="~/Controls/Search-Base.ascx" TagPrefix="uc1" TagName="SearchBase" %>
-<%@ Register Src="~/Controls/SiteMenu.ascx" TagPrefix="uc1" TagName="SiteMenu" %>
-<%@ Register Src="~/Controls/Breadcrumb.ascx" TagPrefix="uc1" TagName="Breadcrumb" %>
-<%@ Register Src="~/Controls/DateModified.ascx" TagPrefix="uc1" TagName="DateModified" %>
-<%@ Register Src="~/Controls/Footer-Base.ascx" TagPrefix="uc1" TagName="FooterBase" %>--%>
-
 <!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="<%=this.TwoLetterLangName %>" dir="<%=this.TextDir %>"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="<%=this.TwoLetterLangName %>" dir="<%=this.TextDir %>">
 <!--<![endif]-->
@@ -42,10 +33,8 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <noscript><link rel="stylesheet" href="/wet-v4/dist/wet-boew/css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
-    <uc1:TopOfPage runat="server" id="TopOfPage" />
-<header role="banner">
+<asp:ContentPlaceHolder ID="TopOfPage" runat="server" />
 <asp:ContentPlaceHolder ID="Header" runat="server" />
-</header>
 <asp:ContentPlaceHolder ID="Main" runat="server" />
 <asp:ContentPlaceHolder ID="Footer" runat="server" />
 <!--[if gte IE 9 | !IE ]><!-->
@@ -56,5 +45,6 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <script src="/wet-v4/dist/wet-boew/js/ie8-wet-boew2.min.js"></script>
 
 <![endif]-->
+<script src="/wet-v4/dist/js/theme.min.js"></script>
 </body>
 </html>

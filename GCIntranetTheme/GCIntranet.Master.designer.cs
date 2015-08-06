@@ -13,13 +13,13 @@ namespace GCIntranetTheme {
     public partial class GCIntranet {
         
         /// <summary>
-        /// gcwu_sig control.
+        /// TopOfPage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal gcwu_sig;
+        protected global::GCIntranetTheme.Controls.TopOfPage TopOfPage;
         
         /// <summary>
         /// LanguageSelection control.
@@ -47,15 +47,6 @@ namespace GCIntranetTheme {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLinkSiteTitle;
-        
-        /// <summary>
-        /// wmms control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal wmms;
         
         /// <summary>
         /// Search control.

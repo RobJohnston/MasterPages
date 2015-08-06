@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GCIntranetTheme {
+namespace GCWebUsability {
     
     
     public partial class Wet_Boew {
@@ -31,22 +31,13 @@ namespace GCIntranetTheme {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder Head;
         
         /// <summary>
-        /// Body control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Body;
-        
-        /// <summary>
         /// TopOfPage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::GCWebUsability.Controls.TopOfPage TopOfPage;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder TopOfPage;
         
         /// <summary>
         /// Header control.
@@ -65,15 +56,6 @@ namespace GCIntranetTheme {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder Main;
-        
-        /// <summary>
-        /// PageDetails control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder PageDetails;
         
         /// <summary>
         /// Footer control.

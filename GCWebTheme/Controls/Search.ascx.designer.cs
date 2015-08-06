@@ -11,23 +11,5 @@ namespace GCWebTheme.Controls {
     
     
     public partial class Search {
-        
-        /// <summary>
-        /// PlaceHolderEnglish control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderEnglish;
-        
-        /// <summary>
-        /// PlaceHolderFrench control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderFrench;
     }
 }

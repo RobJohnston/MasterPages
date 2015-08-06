@@ -9,6 +9,7 @@ namespace GCWebTheme.Controls
 {
     public partial class SectionMenu : System.Web.UI.UserControl
     {
+        private string _sectionTitle;
         protected string myProvider = "EnglishSiteMapProvider";
 
         protected void Page_Load(object sender, EventArgs e)
@@ -35,10 +36,36 @@ namespace GCWebTheme.Controls
             {
                 //Set a different style on the current node.
                 HyperLink currentHyperLink = (HyperLink)e.Item.FindControl("HyperLink1");
-                if (currentHyperLink.NavigateUrl == SiteMap.Providers[myProvider].CurrentNode.Url)
+                SiteMapNode currentNode = SiteMap.Providers[myProvider].CurrentNode;
+
+                if (currentNode != null)
                 {
-                    currentHyperLink.CssClass = "list-group-item wb-navcurr";
+                    if (currentHyperLink.NavigateUrl == currentNode.Url)
+                    {
+                        currentHyperLink.CssClass = "list-group-item wb-navcurr";
+                    }
                 }
+            }
+        }
+
+        protected string SectionTitle
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_sectionTitle))
+                {
+                    SiteMapNode currentNode = SiteMap.Providers[myProvider].CurrentNode;
+
+                    if (currentNode != null)
+                    {
+                        _sectionTitle = SiteMap.Providers[myProvider].CurrentNode.ParentNode.Title;
+                    }
+                    else
+                    {
+                        _sectionTitle = "";  //REVIEW:  What is a good default for a missing title?
+                    }
+                }
+                return _sectionTitle;
             }
         }
 

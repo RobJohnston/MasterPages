@@ -59,6 +59,8 @@
   <ItemGroup>
     <Content Include="content-en.aspx" />
     <Content Include="content-fr.aspx" />
+    <Content Include="content-secmenu-en.aspx" />
+    <Content Include="content-secmenu-fr.aspx" />
     <Content Include="Controls\Breadcrumb.ascx" />
     <Content Include="Controls\DateModified.ascx" />
     <Content Include="Controls\Footer.ascx" />
@@ -69,6 +71,8 @@
     <Content Include="Controls\SiteMenu.ascx" />
     <Content Include="Controls\SubSite.ascx" />
     <Content Include="Controls\TopOfPage.ascx" />
+    <Content Include="default.aspx" />
+    <Content Include="splashpage.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.sitemap">
       <SubType>Designer</SubType>
@@ -1572,6 +1576,20 @@
     <Compile Include="content-fr.aspx.designer.cs">
       <DependentUpon>content-fr.aspx</DependentUpon>
     </Compile>
+    <Compile Include="content-secmenu-en.aspx.cs">
+      <DependentUpon>content-secmenu-en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content-secmenu-en.aspx.designer.cs">
+      <DependentUpon>content-secmenu-en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content-secmenu-fr.aspx.cs">
+      <DependentUpon>content-secmenu-fr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content-secmenu-fr.aspx.designer.cs">
+      <DependentUpon>content-secmenu-fr.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Breadcrumb.ascx.cs">
       <DependentUpon>Breadcrumb.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1642,6 +1660,13 @@
     <Compile Include="Controls\TopOfPage.ascx.designer.cs">
       <DependentUpon>TopOfPage.ascx</DependentUpon>
     </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GCIntranet-SectionMenu.master.cs">
       <DependentUpon>GCIntranet-SectionMenu.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1649,14 +1674,28 @@
     <Compile Include="GCIntranet-SectionMenu.master.designer.cs">
       <DependentUpon>GCIntranet-SectionMenu.master</DependentUpon>
     </Compile>
-    <Compile Include="GCIntranet.Master.cs">
-      <DependentUpon>GCIntranet.Master</DependentUpon>
+    <Compile Include="GCIntranet.master.cs">
+      <DependentUpon>GCIntranet.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GCIntranet.Master.designer.cs">
-      <DependentUpon>GCIntranet.Master</DependentUpon>
+    <Compile Include="GCIntranet.master.designer.cs">
+      <DependentUpon>GCIntranet.master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Splash.master.cs">
+      <DependentUpon>Splash.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Splash.master.designer.cs">
+      <DependentUpon>Splash.master</DependentUpon>
+    </Compile>
+    <Compile Include="splashpage.aspx.cs">
+      <DependentUpon>splashpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="splashpage.aspx.designer.cs">
+      <DependentUpon>splashpage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Wet-Boew.Master.cs">
       <DependentUpon>Wet-Boew.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1667,12 +1706,13 @@
     <Compile Include="WetBoewConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="GCIntranet.Master" />
+    <Content Include="GCIntranet.master" />
     <Content Include="GCIntranet-SectionMenu.master" />
     <Content Include="Footer.sitemap" />
     <Content Include="Footer.fr.sitemap" />
     <Content Include="Header.sitemap" />
     <Content Include="Header.fr.sitemap" />
+    <Content Include="Splash.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1766,6 +1806,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controls\App_LocalResources\SubSite.ascx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\App_LocalResources\Footer.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\App_LocalResources\Footer.ascx.fr.resx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

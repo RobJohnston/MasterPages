@@ -1,5 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GCWebUsability.master.cs" Inherits="GCWebUsability.GCWebUsability" MasterPageFile="~/WET-BOEW.Master" %>
+<%@ MasterType virtualpath="~/Wet-Boew.Master" %>
 
+<%@ Register Src="~/Controls/TopOfPage.ascx" TagPrefix="uc1" TagName="TopOfPage" %>
 <%@ Register Src="~/Controls/LanguageSelectionGCWebUsability.ascx" TagPrefix="uc1" TagName="LanguageSelectionGCWebUsability" %>
 <%@ Register Src="~/Controls/SearchAndMenus.ascx" TagPrefix="uc1" TagName="SearchAndMenus" %>
 <%@ Register Src="~/Controls/Search-GCWebUsability.ascx" TagPrefix="uc1" TagName="SearchGCWebUsability" %>
@@ -7,7 +9,6 @@
 <%@ Register Src="~/Controls/Breadcrumb.ascx" TagPrefix="uc1" TagName="Breadcrumb" %>
 <%@ Register Src="~/Controls/DateModified.ascx" TagPrefix="uc1" TagName="DateModified" %>
 <%@ Register Src="~/Controls/Footer-GCWebUsability.ascx" TagPrefix="uc1" TagName="FooterGCWebUsability" %>
-
 
 <asp:Content ID="ContentMetaData" runat="server" ContentPlaceHolderID="MetaData">
 <meta name="dcterms.title" content="Content page - Web Experience Toolkit">
@@ -18,10 +19,12 @@
 <meta name="dcterms.language" title="ISO639-2" content="eng">
 </asp:Content>
 
-<asp:Content ID="ContentHead" runat="server" ContentPlaceHolderID="Head"></asp:Content>
-<asp:Content ID="ContentBody" runat="server" ContentPlaceHolderID="Body"></asp:Content>
+<asp:Content ID="ContentTopOfPage" runat="server" ContentPlaceHolderID="TopOfPage">
+    <uc1:TopOfPage runat="server" id="TopOfPage" />
+</asp:Content>
 
 <asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="Header">
+<header role="banner">
 <div id="wb-bnr">
 <div id="wb-bar">
 <div class="container">
@@ -46,10 +49,16 @@
 </div>
     <uc1:SiteMenu runat="server" id="SiteMenu" />
     <uc1:Breadcrumb runat="server" id="Breadcrumb" />
+</header>
 </asp:Content>
 
 <asp:Content ID="ContentMain" runat="server" ContentPlaceHolderID="Main">
+<main role="main" property="mainContentOfPage" class="container">
+<h1 id="wb-cont" property="name"><%=Page.Title %></h1>
+
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+<asp:ContentPlaceHolder ID="PageDetails" runat="server" />
+</main>
 </asp:Content>
 
 <asp:Content ID="ContentPageDetails" runat="server" ContentPlaceHolderID="PageDetails">

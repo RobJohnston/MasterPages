@@ -69,6 +69,7 @@
     <Content Include="Controls\SectionMenu.ascx" />
     <Content Include="Controls\SiteMenu.ascx" />
     <Content Include="Controls\TopOfPage.ascx" />
+    <Content Include="default.aspx" />
     <Content Include="partners\index-en.aspx" />
     <Content Include="partners\index-fr.aspx" />
     <Content Include="Web.config" />
@@ -1709,6 +1710,13 @@
     </Compile>
     <Compile Include="Controls\TopOfPage.ascx.designer.cs">
       <DependentUpon>TopOfPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="GCWeb-SectionMenu.master.cs">
       <DependentUpon>GCWeb-SectionMenu.master</DependentUpon>
