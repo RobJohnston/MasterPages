@@ -11,17 +11,5 @@ namespace GCIntranetTheme {
     
     
     public partial class content_en {
-        
-        /// <summary>
-        /// Master property.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated property.
-        /// </remarks>
-        public new GCIntranetTheme.GCIntranet Master {
-            get {
-                return ((GCIntranetTheme.GCIntranet)(base.Master));
-            }
-        }
     }
 }

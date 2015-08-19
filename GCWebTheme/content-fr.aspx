@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/GCWeb.Master" AutoEventWireup="true" CodeBehind="content-fr.aspx.cs" Inherits="GCWebTheme.content_fr" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/GCWeb.Master" AutoEventWireup="true" CodeBehind="content-fr.aspx.cs" Inherits="GCWebTheme.content_fr" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section>
         <h2>En-tête&#32;2&#32;(<code>h2</code>)</h2>

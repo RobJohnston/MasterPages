@@ -9,15 +9,13 @@ namespace GCWebTheme.Controls
 {
     public partial class Footer : System.Web.UI.UserControl
     {
-        protected string myProvider = "EnglishFooterSiteMapProvider";
+        protected string myProvider;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Set the sitemap provider.
-            if (((BasePage)Page).Language == "fr")
-            {
-                myProvider = "FrenchFooterSiteMapProvider";
-            }
+            //Set the sitemap provider.  Assuming that each provider is prefixed with the language abbreviation.
+            string lang = ((BasePage)Page).Language;
+            myProvider = string.Format("{0}FooterSiteMapProvider", lang.ToUpper());
             SiteMapDataSource1.SiteMapProvider = myProvider;
 
             //Change AppRelativeTemplateSourceDirectory to a root relative virtual path so that any relative paths in 

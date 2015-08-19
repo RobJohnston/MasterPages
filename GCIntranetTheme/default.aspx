@@ -10,6 +10,7 @@
     <h1>Example pages</h1>
     
     <ul>
+        <li><a href="splashpage.aspx">Splash page</a></li>
         <li><a href="content-en.aspx">English content page</a></li>
         <li><a href="content-fr.aspx">French content page</a></li>
         <li><a href="content-secmenu-en.aspx">English content page with secondary menu</a></li>

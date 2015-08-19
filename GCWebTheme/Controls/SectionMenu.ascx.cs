@@ -10,15 +10,13 @@ namespace GCWebTheme.Controls
     public partial class SectionMenu : System.Web.UI.UserControl
     {
         private string _sectionTitle;
-        protected string myProvider = "EnglishSiteMapProvider";
+        protected string myProvider;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Set the sitemap provider.
-            if (((BasePage)Page).Language == "fr")
-            {
-                myProvider = "FrenchSiteMapProvider";
-            }
+            //Set the sitemap provider.  Assuming that each provider is prefixed with the language abbreviation.
+            string lang = ((BasePage)Page).Language;
+            myProvider = string.Format("{0}SiteMapProvider", lang.ToUpper());
             SiteMapDataSource1.SiteMapProvider = myProvider;
 
             //Set the starting node level of the sitemap.

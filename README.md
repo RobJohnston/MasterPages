@@ -10,12 +10,14 @@ The projects are:
 
 ## Configuration
 
-There is a custom configuration section in the root web.config file that is still being fleshed-out.
+There is a custom configuration section in the root web.config file that is still being fleshed-out.  
 
 Also in the web.config file, one can set the default master page and define sitemap providers.  There are 3 sitemaps in use:
 * Web.sitemap - controls the breadcrumb trail and the secondary left-side menu (when used by the appropriate master page).
 * Header.sitemap - controls the top horizontal menu before the full menu is AJAX-ed in.
 * Footer.sitemap - controls the vertical list of links in the footer.  For the Canada.ca theme, only the first part is configurable.
+
+Sub-directories may also have a web.config file that overrides the root directory's file.
 
 
 ## Structure of projects
@@ -45,8 +47,9 @@ For using a large and complex codebase with Team Foundation Version Control, see
 
 ## TODO
 
-- [ ] Other than for the Canada.ca theme, some areas can be hidden (search and language selection, site menu and breadcrumb trail).
-- [ ] Search the code for "TODO" and "REVIEW" to see what other items are outstanding.
+- [ ] Maybe use a few global resource files instead of many local resource files?  See https://docs.google.com/spreadsheets/d/1BmMrKN6Rtx-dwgPNEZD6AIAQdI4nNlyVVVCml0U594o/edit?pli=1#gid=1
+- [ ] Show SubSite user control when appropriate to do so.
+- [ ] Search the code for "TODO" and "REVIEW" to see what items are outstanding.
 - [ ] It would be great if the *-SectionMenu.master page could be merged into the regular master page and the menu visibility controlled per page and/or directory.
 - [ ] There may be more properties to add to BasePage (e.g., for metadata).  See http://dublincore.org/documents/dcmi-terms/.
 - [ ] A few more nested master pages, especially for the Canada.ca theme, could be built as required.  See http://wet-boew.github.io/themes-dist/GCWeb/index-en.html.  Most, if not all, could be nested off of GCWeb.master.

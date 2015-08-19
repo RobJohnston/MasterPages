@@ -1,5 +1,5 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/GCIntranet.Master" AutoEventWireup="true" CodeBehind="content-en.aspx.cs" Inherits="GCIntranetTheme.content_en" %>
-<%@ MasterType virtualpath="~/GCIntranet.Master" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/GCIntranet.Master" AutoEventWireup="true" CodeBehind="content-en.aspx.cs" Inherits="GCIntranetTheme.content_en" %>
+<%--<%@ MasterType virtualpath="~/MasterPages/GCIntranet.Master" %>--%>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section>
         <h2>Heading&#32;2&#32;(<code>h2</code>)</h2>

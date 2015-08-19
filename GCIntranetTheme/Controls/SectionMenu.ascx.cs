@@ -10,21 +10,22 @@ namespace GCIntranetTheme.Controls
     public partial class SecondaryMenu : System.Web.UI.UserControl
     {
         private string _sectionTitle;
-        protected string myProvider = "EnglishSiteMapProvider";
+        protected string myProvider;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Set the sitemap provider.
-            if (((BasePage)Page).Language == "fr")
-            {
-                myProvider = "FrenchSiteMapProvider";
-            }
+            //Set the sitemap provider.  Assuming that each provider is prefixed with the language abbreviation.
+            string lang = ((BasePage)Page).Language;
+            myProvider = string.Format("{0}SiteMapProvider", lang.ToUpper());
             SiteMapDataSource1.SiteMapProvider = myProvider;
+
+            //Assuming that each Web[.??].sitemap file has a siteMapNode at the top like "~/index-??.aspx".
+            SiteMapDataSource1.StartingNodeUrl = string.Format("~/index-{0}.aspx", lang);
 
             //Set the starting node level of the sitemap.
             //NOTE:  The intention of a side menu is apparently to show siblings, not children, 
             //       but in practice, it does show children in a nested unordered list.  However,
-            //       this is being discussed further.
+            //       this is still being discussed.
             //SEE:  https://github.com/wet-boew/GCWeb/issues/776#issuecomment-65173962
             //      https://github.com/wet-boew/GCWeb/issues/995
             SiteMapDataSource1.StartingNodeOffset = CurrentNodeLevel - 1;

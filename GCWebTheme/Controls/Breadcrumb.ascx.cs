@@ -9,15 +9,13 @@ namespace GCWebTheme.Controls
 {
     public partial class Breadcrumb : System.Web.UI.UserControl
     {
-        protected string myProvider = "EnglishSiteMapProvider";
+        protected string myProvider;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Set the sitemap provider
-            if (((BasePage)Page).Language == "fr")
-            {
-                myProvider = "FrenchSiteMapProvider";
-            }
+            //Set the sitemap provider.  Assuming that each provider is prefixed with the language abbreviation.
+            string lang = ((BasePage)Page).Language;
+            myProvider = string.Format("{0}SiteMapProvider", lang.ToUpper());
             SiteMapDataSource1.SiteMapProvider = myProvider;
 
             //Create the bulleted list

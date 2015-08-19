@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/GCWeb-SectionMenu.master" AutoEventWireup="true" CodeBehind="index-en.aspx.cs" Inherits="GCWebTheme.partners.index_en" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/GCWeb-SectionMenu.master" AutoEventWireup="true" CodeBehind="index-en.aspx.cs" Inherits="GCWebTheme.partners.index_en" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section>
 <%--        <h2>English</h2>

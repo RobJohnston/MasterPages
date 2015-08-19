@@ -9,18 +9,17 @@ namespace GCIntranetTheme.Controls
 {
     public partial class Breadcrumb : System.Web.UI.UserControl
     {
-        protected string myProvider = "EnglishSiteMapProvider";
+        protected string myProvider;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //TODO: Hide or show the site menu depending on the setting of WetBoewGroup/WetBoew/@breadcrumbTrail in web.config (or overridden by a page-level setting?).
-
-            //Set the sitemap provider
-            if (((BasePage)Page).Language == "fr")
-            {
-                myProvider = "FrenchSiteMapProvider";
-            }
+            //Set the sitemap provider.  Assuming that each provider is prefixed with the language abbreviation.
+            string lang = ((BasePage)Page).Language;
+            myProvider = string.Format("{0}SiteMapProvider", lang.ToUpper());
             SiteMapDataSource1.SiteMapProvider = myProvider;
+
+            //Assuming that each Web[.??].sitemap file has a siteMapNode at the top like "~/index-??.aspx".
+            SiteMapDataSource1.StartingNodeUrl = string.Format("~/index-{0}.aspx", lang);
 
             //Create the bulleted list
             BreadcrumbListItems.Text = string.Format("<li><a href=\"{0}\">{1}</a></li>{2}", SiteMap.Providers[myProvider].RootNode.Url, SiteMap.Providers[myProvider].RootNode.Title, DisplaySiteMapLevelAsBulletedList());
