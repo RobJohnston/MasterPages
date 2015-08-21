@@ -63,6 +63,8 @@
   <ItemGroup>
     <Content Include="content-fr.aspx" />
     <Content Include="content-en.aspx" />
+    <Content Include="content-secmenu-en.aspx" />
+    <Content Include="content-secmenu-fr.aspx" />
     <Content Include="Controls\Breadcrumb.ascx" />
     <Content Include="Controls\DateModified.ascx" />
     <Content Include="Controls\Footer.ascx" />
@@ -72,6 +74,7 @@
     <Content Include="Controls\SectionMenu.ascx" />
     <Content Include="Controls\SiteMenu.ascx" />
     <Content Include="Controls\TopOfPage.ascx" />
+    <Content Include="splashpage.aspx" />
     <Content Include="Web.config" />
     <Content Include="wet-v4\dist\404-en-fr.html" />
     <Content Include="wet-v4\dist\404-en.html" />
@@ -1586,6 +1589,20 @@
     <Compile Include="content-en.aspx.designer.cs">
       <DependentUpon>content-en.aspx</DependentUpon>
     </Compile>
+    <Compile Include="content-secmenu-en.aspx.cs">
+      <DependentUpon>content-secmenu-en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content-secmenu-en.aspx.designer.cs">
+      <DependentUpon>content-secmenu-en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content-secmenu-fr.aspx.cs">
+      <DependentUpon>content-secmenu-fr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content-secmenu-fr.aspx.designer.cs">
+      <DependentUpon>content-secmenu-fr.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Breadcrumb.ascx.cs">
       <DependentUpon>Breadcrumb.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1649,12 +1666,26 @@
     <Compile Include="Controls\TopOfPage.ascx.designer.cs">
       <DependentUpon>TopOfPage.ascx</DependentUpon>
     </Compile>
+    <Compile Include="MasterPages\GCWebUsability-SectionMenu.master.cs">
+      <DependentUpon>GCWebUsability-SectionMenu.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\GCWebUsability-SectionMenu.master.designer.cs">
+      <DependentUpon>GCWebUsability-SectionMenu.master</DependentUpon>
+    </Compile>
     <Compile Include="MasterPages\GCWebUsability.master.cs">
       <DependentUpon>GCWebUsability.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MasterPages\GCWebUsability.master.designer.cs">
       <DependentUpon>GCWebUsability.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Splash.master.cs">
+      <DependentUpon>Splash.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Splash.master.designer.cs">
+      <DependentUpon>Splash.master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MasterPages\Wet-Boew.Master.cs">
@@ -1663,6 +1694,13 @@
     </Compile>
     <Compile Include="MasterPages\WET-BOEW.Master.designer.cs">
       <DependentUpon>Wet-Boew.Master</DependentUpon>
+    </Compile>
+    <Compile Include="splashpage.aspx.cs">
+      <DependentUpon>splashpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="splashpage.aspx.designer.cs">
+      <DependentUpon>splashpage.aspx</DependentUpon>
     </Compile>
     <Compile Include="WetBoewConfiguration.cs" />
   </ItemGroup>
@@ -1675,6 +1713,8 @@
     <Content Include="SiteMaps\Footer.fr.sitemap" />
     <Content Include="SiteMaps\Footer2.sitemap" />
     <Content Include="SiteMaps\Footer2.fr.sitemap" />
+    <Content Include="MasterPages\GCWebUsability-SectionMenu.master" />
+    <Content Include="MasterPages\Splash.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

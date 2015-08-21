@@ -21,7 +21,7 @@ namespace GCWebUsabilityTheme.Controls
             myProvider = string.Format("{0}Footer2SiteMapProvider", lang.ToUpper());
             SiteMapDataSource2.SiteMapProvider = myProvider;
 
-            //Set the licence and transparency links.
+            //Set the licence, transparency, and Canada.ca links.
             WetBoewConfiguration config = WetBoewConfiguration.GetConfiguration();
             LanguagesCollection myLanguagesSection = config.Languages as LanguagesCollection;
 
@@ -37,10 +37,12 @@ namespace GCWebUsabilityTheme.Controls
             if (lang == "fr")
             {
                 Trans.NavigateUrl = "http://www.tbs-sct.gc.ca/tbs-sct/common/trans-fra.asp";
+                CanadaCa.NavigateUrl = "http://www.canada.ca/fr/index.html";
             }
             else
             {
                 Trans.NavigateUrl = "http://www.tbs-sct.gc.ca/tbs-sct/common/trans-eng.asp";
+                CanadaCa.NavigateUrl = "http://www.canada.ca/en/index.html";
             }
 
             Terms.Text = Localization.TemplateStrings.tmpl_terms;

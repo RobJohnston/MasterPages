@@ -44,19 +44,14 @@
 <div class="container">
 <nav role="navigation">
 <h2><%=Localization.TemplateStrings.tmpl_gc_foot %></h2>
+<ul class="list-inline">
     <asp:Repeater ID="Repeater2" runat="server" DataSourceID="SiteMapDataSource2">
-        <HeaderTemplate>
-            <ul class="list-inline">
-        </HeaderTemplate>
-
         <ItemTemplate>
             <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("Url") %>'><span><%# Eval("Title") %></span></asp:HyperLink></li>
         </ItemTemplate>
-
-        <FooterTemplate>
-            </ul>
-        </FooterTemplate>
     </asp:Repeater>
+    <li id="canada-ca"><asp:HyperLink ID="CanadaCa" runat="server" NavigateUrl="http://www.canada.ca/en/index.html" Text="Canada.ca" /></li>
+</ul>
 </nav>
 </div>
 </div>

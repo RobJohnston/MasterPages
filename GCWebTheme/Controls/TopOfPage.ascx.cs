@@ -14,7 +14,7 @@ namespace GCWebTheme.Controls
             //Make PlaceHolderSectionMenu visible if the page is using a 2-column layout.
             string myMasterPage = Page.MasterPageFile;
 
-            if (myMasterPage == "/GCWeb-SectionMenu.master")
+            if (myMasterPage == "/MasterPages/GCWeb-SectionMenu.master")
             {
                 PlaceHolderSectionMenu.Visible = true;
             }
