@@ -2,7 +2,7 @@
 <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
 
 <nav role="navigation" id="wb-sm" class="wb-menu visible-md visible-lg" data-trgt="mb-pnl" data-ajax-replace="<%=this.SiteMenuFile %>" typeof="SiteNavigationElement">
-<h2 class="wb-inv"><asp:Localize ID="Localize1" runat="server" Text="Topics menu" meta:resourcekey="LocalizeTopicsMenuResource1" /></h2>
+<h2 class="wb-inv"><%=Localization.TemplateStrings.tmpl_topics_menu %></h2>
 <div class="container nvbar">
 <div class="row">
 

@@ -47,10 +47,9 @@ For using a large and complex codebase with Team Foundation Version Control, see
 
 ## TODO
 
-- [ ] Maybe use a few global resource files instead of many local resource files?  See https://docs.google.com/spreadsheets/d/1BmMrKN6Rtx-dwgPNEZD6AIAQdI4nNlyVVVCml0U594o/edit?pli=1#gid=1
-- [ ] Show SubSite user control when appropriate to do so.
+- [ ] Maybe put more of the Canada.ca theme's footer links into a sitemap (in case they change, it would be an easier fix)?
+- [ ] Show SubSite user control when appropriate to do so (not for the Canada.ca theme).
 - [ ] Search the code for "TODO" and "REVIEW" to see what items are outstanding.
 - [ ] It would be great if the *-SectionMenu.master page could be merged into the regular master page and the menu visibility controlled per page and/or directory.
 - [ ] There may be more properties to add to BasePage (e.g., for metadata).  See http://dublincore.org/documents/dcmi-terms/.
 - [ ] A few more nested master pages, especially for the Canada.ca theme, could be built as required.  See http://wet-boew.github.io/themes-dist/GCWeb/index-en.html.  Most, if not all, could be nested off of GCWeb.master.
-- [ ] GCWebUsabilityTheme needs much more work.  Closest example to work off of is GCIntranetTheme.

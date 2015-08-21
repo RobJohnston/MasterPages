@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GCWebUsability.Controls {
+namespace GCWebUsabilityTheme.Controls {
     
     
     public partial class DateModified {

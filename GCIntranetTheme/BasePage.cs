@@ -22,10 +22,19 @@ namespace GCIntranetTheme
             //Given an arbitrary page such as "/SomeDir/SomePage-fra.aspx?id=123",
             //the above pattern should find 1 group: "fra".
 
+            //TODO:  Can this be generalized for all languages using 
+            //Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName or 
+            //Thread.CurrentThread.CurrentUICulture.ThreeLetterISOLanguageName?
             if (m.Success)
             {
                 switch (m.Groups[1].Value)
                 {
+                    case "e":
+                    case "en":
+                    case "eng":
+                        userCulture = "en-ca";
+                        break;
+                    case "f":
                     case "fr":
                     case "fra":
                         userCulture = "fr-ca";
@@ -34,7 +43,7 @@ namespace GCIntranetTheme
                         userCulture = "en-ca";
                         break;
                 }
-
+                
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo(userCulture);
                 Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(userCulture);
             }
@@ -52,7 +61,7 @@ namespace GCIntranetTheme
                 string str = ViewState["PageCreator"] as string;
                 if (str == null)
                 {
-                    //REVIEW:  Edit as appropriate.
+                    //REVIEW:  Edit as appropriate.  Should this be in the custom web.config section?
                     if (this.Language == "fr")
                     {
                         return "Gouvernement du Canada, Citoyenneté et Immigration Canada"; 
@@ -193,7 +202,7 @@ namespace GCIntranetTheme
                 string str = ViewState["PageSubject"] as string;
                 if (str == null)
                 {
-                    //REVIEW:  Edit as appropriate.
+                    //REVIEW:  Edit as appropriate.  Should this be in the custom web.config section?
                     if (this.Language == "fr")
                     {
                         return "Citoyenneté; Immigration; Multiculturalisme";

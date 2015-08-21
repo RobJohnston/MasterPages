@@ -21,7 +21,7 @@
 <div id="wb-bar">
 <div class="container">
 <div class="row">
-<asp:Localize runat="server" meta:resourcekey="gcwu_sigResource1" Text="&lt;object id=&quot;gcwu-sig&quot; type=&quot;image/svg+xml&quot; tabindex=&quot;-1&quot; role=&quot;img&quot; data=&quot;./wet-v4/dist/assets/sig-blk-en.svg&quot; aria-label=&quot;Government of Canada&quot;&gt;&lt;/object&gt;"></asp:Localize>
+<object id="gcwu-sig" type="image/svg+xml" tabindex="-1" role="img" data="<%=GetSignatureImage() %>" aria-label="<%=Localization.TemplateStrings.tmpl_gc_sig %>"></object>
     <uc1:LanguageSelection runat="server" id="LanguageSelection" />
     <uc1:SearchAndMenus runat="server" id="SearchAndMenus" />
 </div>
@@ -33,7 +33,7 @@
 <asp:HyperLink ID="HyperLinkSiteTitle" runat="server" NavigateUrl="http://wet-boew.github.io/v4.0-ci/index-en.html">
 <span>Web Experience Toolkit</span>
 </asp:HyperLink>
-<asp:Localize runat="server" meta:resourcekey="wmmsResource1" Text="&lt;object id=&quot;wmms&quot; type=&quot;image/svg+xml&quot; tabindex=&quot;-1&quot; role=&quot;img&quot; data=&quot;./wet-v4/dist/assets/wmms-intra.svg&quot; aria-label=&quot;Symbol of the Government of Canada&quot;&gt;&lt;/object&gt;"></asp:Localize>
+<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="./wet-v4/dist/assets/wmms-intra.svg" aria-label="<%=Localization.TemplateStrings.tmpl_gc_wmms %>"></object>
 </div>
     <uc1:Search runat="server" id="Search" />
 </div>

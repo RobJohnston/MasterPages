@@ -1,11 +1,12 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Footer.ascx.cs" Inherits="GCIntranetTheme.Controls.Footer" %>
 <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+<div class="container">
+<nav role="navigation">
+<h2><%=Localization.TemplateStrings.tmpl_about_site %></h2>
+
 <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SiteMapDataSource1">
     <HeaderTemplate>
-        <footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
-        <div class="container">
-        <nav role="navigation">
-        <h2><asp:Localize ID="LocalizeAbout" runat="server" Text="About this site" meta:resourcekey="LocalizeAboutResource1" /></h2>
         <div class="row">
     </HeaderTemplate>
 
@@ -28,12 +29,12 @@
 
     <FooterTemplate>
         </div>
-        <ul id="gc-tctr" class="list-inline">
-        <li><asp:HyperLink runat="server" rel="license" NavigateUrl="http://wet-boew.github.io/wet-boew/License-en.html" Text="Terms and conditions" meta:resourcekey="HyperLinkResource1" /></li>
-        <li><asp:HyperLink runat="server" NavigateUrl="http://www.tbs-sct.gc.ca/tbs-sct/common/trans-eng.asp" Text="Transparency" meta:resourcekey="HyperLinkResource2" /></li>
-        </ul>
-        </nav>
-        </div>
-        </footer>
     </FooterTemplate>
 </asp:Repeater>
+<ul id="gc-tctr" class="list-inline">
+<li><asp:HyperLink ID="Terms" runat="server" rel="license" NavigateUrl="~/License-en.html" Text="Terms and conditions" /></li>
+<li><asp:HyperLink ID="Trans" runat="server" NavigateUrl="http://www.tbs-sct.gc.ca/tbs-sct/common/trans-eng.asp" Text="Transparency" /></li>
+</ul>
+</nav>
+</div>
+</footer>

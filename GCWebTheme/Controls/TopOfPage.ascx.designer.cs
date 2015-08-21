@@ -13,24 +13,6 @@ namespace GCWebTheme.Controls {
     public partial class TopOfPage {
         
         /// <summary>
-        /// LocalizeSkipToMainContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Localize LocalizeSkipToMainContent;
-        
-        /// <summary>
-        /// LocalizeSkipToAboutThisSite control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Localize LocalizeSkipToAboutThisSite;
-        
-        /// <summary>
         /// PlaceHolderSectionMenu control.
         /// </summary>
         /// <remarks>
@@ -38,14 +20,5 @@ namespace GCWebTheme.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderSectionMenu;
-        
-        /// <summary>
-        /// LocalizeSkipToSectionMenu control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Localize LocalizeSkipToSectionMenu;
     }
 }

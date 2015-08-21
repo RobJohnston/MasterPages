@@ -13,15 +13,6 @@ namespace GCWebTheme.Controls {
     public partial class LanguageSelection {
         
         /// <summary>
-        /// LocalizeLanguageSelection control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Localize LocalizeLanguageSelection;
-        
-        /// <summary>
         /// HyperLinkLanguage1 control.
         /// </summary>
         /// <remarks>

@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SectionMenu.ascx.cs" Inherits="GCWebTheme.Controls.SectionMenu" %>
-<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" StartingNodeUrl="~/default.aspx" StartingNodeOffset="0" />
+<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" StartingNodeOffset="0" />
 <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SiteMapDataSource1" OnItemDataBound="RepeaterItemEventHandler">
     <HeaderTemplate>
         <nav class="wb-sec col-md-3 col-md-pull-9" typeof="SiteNavigationElement" id="wb-sec" role="navigation">

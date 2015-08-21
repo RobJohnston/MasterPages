@@ -51,5 +51,19 @@ namespace GCIntranetTheme.MasterPages
                 LanguageSelection.Visible = false;
             }
         }
+
+        protected string GetSignatureImage()
+        {
+            string lang = ((BasePage)Page).Language;
+
+            if (lang == "fr")
+            {
+                return "./wet-v4/dist/assets/sig-blk-fr.svg";
+            }
+            else
+            {
+                return "./wet-v4/dist/assets/sig-blk-en.svg";
+            }
+        }
     }
 }

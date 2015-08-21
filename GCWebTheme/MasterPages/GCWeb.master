@@ -31,7 +31,7 @@
     <uc1:LanguageSelection runat="server" id="LanguageSelection" />
 <div class="row">
 <div class="brand col-xs-8 col-sm-9 col-md-6">
-<asp:HyperLink runat="server" NavigateUrl="http://www.canada.ca/en/index.html" meta:resourcekey="HyperLinkResource1"><object type="image/svg+xml" tabindex="-1" data="/wet-v4/dist/assets/sig-blk-en.svg"></object><span class="wb-inv"> Government of Canada</span></asp:HyperLink>
+<asp:HyperLink ID="Home" runat="server" NavigateUrl="http://www.canada.ca/en/index.html"><object type="image/svg+xml" tabindex="-1" data="/wet-v4/dist/assets/sig-blk-en.svg"></object><span class="wb-inv"> Government of Canada</span></asp:HyperLink>
 </div>
     <uc1:SearchAndMenus runat="server" id="SearchAndMenus" />
     <uc1:Search runat="server" id="Search" />
@@ -52,7 +52,7 @@
 </div>
 <div class="clear visible-xs"></div>
 <div class="col-sm-4 col-xs-6">
-<asp:HyperLink runat="server" NavigateUrl="http://www.canada.ca/en/contact/feedback.html" CssClass="btn btn-default" meta:resourcekey="HyperLinkResource2"><span class="glyphicon glyphicon-comment mrgn-rght-sm"></span>Feedback<span class="wb-inv"> about this web site</span></asp:HyperLink>
+<asp:HyperLink ID="Feedback" runat="server" NavigateUrl="http://www.canada.ca/en/contact/feedback.html" CssClass="btn btn-default"><span class="glyphicon glyphicon-comment mrgn-rght-sm"></span>Feedback<span class="wb-inv"> about this web site</span></asp:HyperLink>
 </div>
 <div class="col-sm-3 col-xs-6 text-right">
 <div class="wb-share" data-wb-share='{"lnkClass": "btn btn-default"}'></div>

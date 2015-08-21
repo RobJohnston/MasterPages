@@ -4,7 +4,7 @@
 <asp:PlaceHolder ID="PlaceHolderSiteMenu" runat="server">
 <nav role="navigation" id="wb-sm" data-ajax-replace="<%=this.SiteMenuFile %>" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
 <div class="container nvbar">
-<h2><asp:Localize ID="LocalizeTopicsMenu" runat="server" Text="Topics menu" meta:resourcekey="LocalizeTopicsMenuResource1" /></h2>
+<h2><%=Localization.TemplateStrings.tmpl_topics_menu %></h2>
 <div class="row">
 <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SiteMapDataSource1">
     <HeaderTemplate>

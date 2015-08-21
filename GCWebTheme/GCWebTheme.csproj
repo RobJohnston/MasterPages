@@ -1779,6 +1779,12 @@
     <None Include="partners\Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="SiteMaps\Aside.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SiteMaps\Aside.fr.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1821,92 +1827,16 @@
     <Content Include="wet-v4\dist\unmin\fonts\_base.scss" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Controls\App_LocalResources\DateModified.ascx.resx">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\DateModified.ascx.fr.resx">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\TopOfPage.ascx.resx">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\TopOfPage.ascx.fr.resx">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\LanguageSelection.ascx.resx">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\LanguageSelection.ascx.fr.resx">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\SiteMenu.ascx.resx">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\SiteMenu.ascx.fr.resx">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\SearchAndMenus.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\SearchAndMenus.ascx.fr.resx">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\Aside.ascx.resx">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\Aside.ascx.fr.resx">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Controls\App_LocalResources\Footer.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controls\App_LocalResources\Footer.ascx.fr.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Controls\App_LocalResources\Search.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\Search.ascx.fr.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MasterPages\App_LocalResources\GCWeb.master.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MasterPages\App_LocalResources\GCWeb.master.fr.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MasterPages\App_LocalResources\GCWeb-SectionMenu.master.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MasterPages\App_LocalResources\GCWeb-SectionMenu.master.fr.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\Breadcrumb.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\Breadcrumb.ascx.fr.resx" />
+    <ProjectReference Include="..\Localization\Localization.csproj">
+      <Project>{c96a2f65-ea3c-49bb-aef6-e62fd770c186}</Project>
+      <Name>Localization</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

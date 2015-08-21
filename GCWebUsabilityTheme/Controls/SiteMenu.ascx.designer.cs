@@ -7,27 +7,45 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GCWebUsability.Controls {
+namespace GCWebUsabilityTheme.Controls {
     
     
     public partial class SiteMenu {
         
         /// <summary>
-        /// YesSiteMenu control.
+        /// SiteMapDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder YesSiteMenu;
+        protected global::System.Web.UI.WebControls.SiteMapDataSource SiteMapDataSource1;
         
         /// <summary>
-        /// NoSiteMenu control.
+        /// PlaceHolderSiteMenu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder NoSiteMenu;
+        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderSiteMenu;
+        
+        /// <summary>
+        /// Repeater1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater Repeater1;
+        
+        /// <summary>
+        /// PlaceHolderNoSiteMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderNoSiteMenu;
     }
 }

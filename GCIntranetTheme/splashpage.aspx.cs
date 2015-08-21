@@ -55,17 +55,13 @@ namespace GCIntranetTheme
         /// </summary>
         /// <param name="lang">The abbreviation of the target language.</param>
         /// <returns>"Terms and conditions of use" translated to the target language.</returns>
-        /// <remarks>
-        /// Translations for "Terms and Conditions" are available on line 241 here: 
-        /// https://docs.google.com/spreadsheets/d/1BmMrKN6Rtx-dwgPNEZD6AIAQdI4nNlyVVVCml0U594o/edit?pli=1#gid=1
-        /// </remarks>
         private string TranslateTerms(string lang)
         {
             string result = "";
             string currentLang = Thread.CurrentThread.CurrentUICulture.Name;
 
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(lang);
-            result = Resources.TemplateStrings.tmpl_terms_of_use;
+            result = Localization.TemplateStrings.tmpl_terms_of_use;
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(currentLang);
 
             return result;

@@ -1563,16 +1563,6 @@
     <Content Include="wet-v4\dist\wet-boew\js\wet-boew.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_GlobalResources\TemplateStrings.fr.designer.cs">
-      <DependentUpon>TemplateStrings.fr.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="App_GlobalResources\TemplateStrings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TemplateStrings.resx</DependentUpon>
-    </Compile>
     <Compile Include="BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -1762,82 +1752,16 @@
     <Content Include="wet-v4\dist\wet-boew\fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Controls\App_LocalResources\Breadcrumb.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\Breadcrumb.ascx.fr.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\DateModified.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\DateModified.ascx.fr.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\LanguageSelection.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\LanguageSelection.ascx.fr.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\Search.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\Search.ascx.fr.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\SearchAndMenus.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\SearchAndMenus.ascx.fr.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\SiteMenu.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\SiteMenu.ascx.fr.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\TopOfPage.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\TopOfPage.ascx.fr.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MasterPages\App_LocalResources\GCIntranet-SectionMenu.master.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MasterPages\App_LocalResources\GCIntranet-SectionMenu.master.fr.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MasterPages\App_LocalResources\GCIntranet.Master.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MasterPages\App_LocalResources\GCIntranet.Master.fr.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Controls\App_LocalResources\SubSite.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controls\App_LocalResources\SubSite.ascx.fr.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Controls\App_LocalResources\Footer.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Controls\App_LocalResources\Footer.ascx.fr.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\TemplateStrings.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>TemplateStrings.Designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\TemplateStrings.fr.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>TemplateStrings.fr.designer.cs</LastGenOutput>
-    </Content>
+    <ProjectReference Include="..\Localization\Localization.csproj">
+      <Project>{c96a2f65-ea3c-49bb-aef6-e62fd770c186}</Project>
+      <Name>Localization</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

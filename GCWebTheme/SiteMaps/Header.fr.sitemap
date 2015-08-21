@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="false">
   <siteMapNode url="" title="Menu des sujets">
     <siteMapNode url="http://www.edsc.gc.ca/fr/emplois/index.page" title="Emplois" />
     <siteMapNode url="http://www.cic.gc.ca/francais/index.asp" title="Immigration" />

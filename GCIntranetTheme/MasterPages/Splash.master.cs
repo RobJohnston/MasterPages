@@ -52,17 +52,13 @@ namespace GCIntranetTheme.MasterPages
         /// </summary>
         /// <param name="lang">The abbreviation of the target language.</param>
         /// <returns>"Language selection" translated to the target language.</returns>
-        /// <remarks>
-        /// Translations for "Language selection" are available on line 230 here: 
-        /// https://docs.google.com/spreadsheets/d/1BmMrKN6Rtx-dwgPNEZD6AIAQdI4nNlyVVVCml0U594o/edit?pli=1#gid=1
-        /// </remarks>
         private string TranslateTitles(string lang)
         {
             string result = "";
             string currentLang = Thread.CurrentThread.CurrentUICulture.Name;
 
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(lang);
-            result = Resources.TemplateStrings.tmpl_lang_select;
+            result = Localization.TemplateStrings.tmpl_lang_select;
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(currentLang);
 
             return result;
