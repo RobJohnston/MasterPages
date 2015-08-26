@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace GCIntranetTheme.Controls
 {
-    public partial class SecondaryMenu : System.Web.UI.UserControl
+    public partial class SectionMenu : System.Web.UI.UserControl
     {
         private string _sectionTitle;
         protected string myProvider;

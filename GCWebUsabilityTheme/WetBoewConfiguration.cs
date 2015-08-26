@@ -62,6 +62,20 @@ namespace GCWebUsabilityTheme
             }
         }
 
+        //Create a "showSectionMenu" attribute.
+        [ConfigurationProperty("showSectionMenu", DefaultValue = false, IsRequired = false)]
+        public bool ShowSectionMenu
+        {
+            get
+            {
+                return (bool)this["showSectionMenu"];
+            }
+            set
+            {
+                this["showSectionMenu"] = value;
+            }
+        }
+
         //Create a "showSiteMenu" attribute.
         [ConfigurationProperty("showSiteMenu", DefaultValue = true, IsRequired = false)]
         public bool ShowSiteMenu

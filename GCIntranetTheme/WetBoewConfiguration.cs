@@ -76,6 +76,20 @@ namespace GCIntranetTheme
             }
         }
 
+        //Create a "showSectionMenu" attribute.
+        [ConfigurationProperty("showSectionMenu", DefaultValue = false, IsRequired = false)]
+        public bool ShowSectionMenu
+        {
+            get
+            {
+                return (bool)this["showSectionMenu"];
+            }
+            set
+            {
+                this["showSectionMenu"] = value;
+            }
+        }
+
         // Declare a collection element represented in the configuration file 
         // by the sub-section <languages> <add .../> </languages>  
         // Note: the "IsDefaultCollection = false" instructs the .NET Framework 

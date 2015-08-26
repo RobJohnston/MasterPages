@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/GCWebUsability-SectionMenu.master" AutoEventWireup="true" CodeBehind="content-secmenu-en.aspx.cs" Inherits="GCWebUsabilityTheme.content_secmenu_en" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/GCWebUsability.master" AutoEventWireup="true" CodeBehind="content-secmenu-en.aspx.cs" Inherits="GCWebUsabilityTheme.content_secmenu_en" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis ac turpis eget ornare. Mauris pharetra lorem magna, ut hendrerit ex imperdiet eget. Etiam accumsan felis vitae lorem sodales, condimentum elementum elit consequat. Aenean a nunc interdum, vestibulum justo id, malesuada elit. Donec a purus vel erat commodo finibus a nec augue. Mauris a sem justo. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor aliquam scelerisque. In faucibus turpis vel odio ultrices, a fermentum erat vehicula. Quisque commodo ligula eget odio pulvinar, eget accumsan turpis efficitur.</p>
 

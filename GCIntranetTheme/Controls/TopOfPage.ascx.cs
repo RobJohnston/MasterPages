@@ -12,9 +12,7 @@ namespace GCIntranetTheme.Controls
         protected void Page_Load(object sender, EventArgs e)
         {
             //Make PlaceHolderSecondaryMenu visible if the page is using a 2-column layout.
-            string myMasterPage = Page.MasterPageFile;
-
-            if (myMasterPage == "/MasterPages/GCIntranet-SectionMenu.master")
+            if (((BasePage)Page).ShowSectionMenu)
             {
                 PlaceHolderSecondaryMenu.Visible = true;
             }

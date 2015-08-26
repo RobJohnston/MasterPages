@@ -43,6 +43,17 @@ namespace GCIntranetTheme.MasterPages
                 Search.Visible = false;
             }
 
+            //Show a section menu if required.
+            if (((BasePage)Page).ShowSectionMenu)
+            {
+                container.CssClass = "container";
+                row.CssClass = "row";
+                main.Attributes["class"] = "col-md-9 col-md-push-3";
+
+                GCIntranetTheme.Controls.SectionMenu SectionMenu1 = (GCIntranetTheme.Controls.SectionMenu)LoadControl("~/Controls/SectionMenu.ascx") as GCIntranetTheme.Controls.SectionMenu;
+                row.Controls.Add(SectionMenu1);
+            }
+
             //Hide the language selection link(s) if the WetBoewGroup/WetBoew/Languages section only has one language defined.
             bool showLanguage = (config.Languages.Count > 1? true: false);
 
@@ -58,11 +69,11 @@ namespace GCIntranetTheme.MasterPages
 
             if (lang == "fr")
             {
-                return "./wet-v4/dist/assets/sig-blk-fr.svg";
+                return "./wet-v4/assets/sig-blk-fr.svg";
             }
             else
             {
-                return "./wet-v4/dist/assets/sig-blk-en.svg";
+                return "./wet-v4/assets/sig-blk-en.svg";
             }
         }
     }

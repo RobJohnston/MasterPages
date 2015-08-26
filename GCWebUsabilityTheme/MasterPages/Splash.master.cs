@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace GCWebUsabilityTheme.MasterPages
@@ -44,6 +45,23 @@ namespace GCWebUsabilityTheme.MasterPages
 
                 Page.Title = pageTitle;
                 LiteralTitle.Text = headingTitle;
+
+                //For this theme only, need a way to replace two "theme" css files with "theme-sp-pe" files.
+                List<HtmlLink> oldLinks = new List<HtmlLink>(); 
+
+                foreach (Control c in Page.Header.Controls)
+                {
+                    if (c is HtmlLink && (c as HtmlLink).Attributes["rel"] == "stylesheet")
+                    {
+                        oldLinks.Add(c as HtmlLink);
+                    }
+                }
+
+                foreach (HtmlLink oldLink in oldLinks)
+                {
+                    oldLink.Href = oldLink.Href.Replace("theme", "theme-sp-pe");
+                }
+
             }
         }
 

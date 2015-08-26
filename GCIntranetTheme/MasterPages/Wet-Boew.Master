@@ -21,16 +21,16 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 </asp:ContentPlaceHolder>
 <!-- Meta data-->
 <!--[if gte IE 9 | !IE ]><!-->
-<link href="/wet-v4/dist/assets/favicon.ico" rel="icon" type="image/x-icon">
-<link rel="stylesheet" href="/wet-v4/dist/css/theme.min.css">
+<link href="/wet-v4/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="/wet-v4/css/theme.min.css">
 <!--<![endif]-->
 <!--[if lt IE 9]>
-<link href="/wet-v4/dist/assets/favicon.ico" rel="shortcut icon" />
-<link rel="stylesheet" href="/wet-v4/dist/css/ie8-theme.min.css" />
+<link href="/wet-v4/assets/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="/wet-v4/css/ie8-theme.min.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="/wet-v4/dist/wet-boew/js/ie8-wet-boew.min.js"></script>
+<script src="/wet-v4/wet-boew/js/ie8-wet-boew.min.js"></script>
 <![endif]-->
-<noscript><link rel="stylesheet" href="/wet-v4/dist/wet-boew/css/noscript.min.css" /></noscript>
+<noscript><link rel="stylesheet" href="/wet-v4/wet-boew/css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
 <asp:ContentPlaceHolder ID="TopOfPage" runat="server" />
@@ -39,12 +39,12 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <asp:ContentPlaceHolder ID="Footer" runat="server" />
 <!--[if gte IE 9 | !IE ]><!-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-<script src="/wet-v4/dist/wet-boew/js/wet-boew.min.js"></script>
+<script src="/wet-v4/wet-boew/js/wet-boew.min.js"></script>
 <!--<![endif]-->
 <!--[if lt IE 9]>
-<script src="/wet-v4/dist/wet-boew/js/ie8-wet-boew2.min.js"></script>
+<script src="/wet-v4/wet-boew/js/ie8-wet-boew2.min.js"></script>
 
 <![endif]-->
-<script src="/wet-v4/dist/js/theme.min.js"></script>
+<script src="/wet-v4/js/theme.min.js"></script>
 </body>
 </html>

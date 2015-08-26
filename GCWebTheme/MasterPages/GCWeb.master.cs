@@ -30,6 +30,17 @@ namespace GCWebTheme.MasterPages
 
             Home.Text = string.Format("<object type=\"image/svg+xml\" tabindex=\"-1\" data=\"/wet-v4/dist/assets/{0}\"></object><span class=\"wb-inv\"> {1}</span>", img, Localization.TemplateStrings.tmpl_gc_sig);
             Feedback.Text = string.Format("<span class=\"glyphicon glyphicon-comment mrgn-rght-sm\"></span>{0}", feedback);
+
+
+            //Show a section menu if required.
+            if (((BasePage)Page).ShowSectionMenu) {
+                container.CssClass = "container";
+                row.CssClass = "row";
+                main.Attributes["class"] = "col-md-9 col-md-push-3";
+
+                GCWebTheme.Controls.SectionMenu SectionMenu1 = (GCWebTheme.Controls.SectionMenu)LoadControl("~/Controls/SectionMenu.ascx") as GCWebTheme.Controls.SectionMenu;
+                row.Controls.Add(SectionMenu1);
+            }
         }
     }
 }

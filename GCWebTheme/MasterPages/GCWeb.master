@@ -10,6 +10,7 @@
 <%@ Register Src="~/Controls/DateModified.ascx" TagPrefix="uc1" TagName="DateModified" %>
 <%@ Register Src="~/Controls/Aside.ascx" TagPrefix="uc1" TagName="Aside" %>
 <%@ Register Src="~/Controls/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+<%@ Register Src="~/Controls/SectionMenu.ascx" TagPrefix="uc1" TagName="SectionMenu" %>
 
 <asp:Content ID="ContentHead" ContentPlaceHolderID="Head" runat="server">
 <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
@@ -43,7 +44,9 @@
 </asp:Content>
 
 <asp:Content ID="ContentMain" ContentPlaceHolderID="Main" runat="server">
-<main role="main" property="mainContentOfPage" class="container">
+<asp:Panel ID="container" runat="server">
+<asp:Panel ID="row" runat="server">
+<main role="main" property="mainContentOfPage" class="container" id="main" runat="server">
 <h1 id="wb-cont" property="name"><%=Page.Title %></h1>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
 <div class="row pagedetails">
@@ -60,6 +63,8 @@
 <div class="clear visible-xs"></div>
 </div>
 </main>
+</asp:Panel>
+</asp:Panel>
 </asp:Content>
 
 <asp:Content ID="ContentFooter" ContentPlaceHolderID="Footer" runat="server">

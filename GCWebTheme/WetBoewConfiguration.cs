@@ -33,17 +33,17 @@ namespace GCWebTheme
             }
         }
 
-        //Create a "textDirection" attribute.
-        [ConfigurationProperty("textDirection", DefaultValue = "ltr", IsRequired = false)]
-        public string TextDirection
+        //Create a "showSectionMenu" attribute.
+        [ConfigurationProperty("showSectionMenu", DefaultValue = false, IsRequired = false)]
+        public bool ShowSectionMenu
         {
             get
             {
-                return (string)this["textDirection"];
+                return (bool)this["showSectionMenu"];
             }
             set
             {
-                this["textDirection"] = value;
+                this["showSectionMenu"] = value;
             }
         }
     }

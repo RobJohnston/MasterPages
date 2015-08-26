@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/GCIntranet-SectionMenu.master" AutoEventWireup="true" CodeBehind="content-secmenu-fr.aspx.cs" Inherits="GCIntranetTheme.content_secmenu_fr" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/GCIntranet.master" AutoEventWireup="true" CodeBehind="content-secmenu-fr.aspx.cs" Inherits="GCIntranetTheme.content_secmenu_fr" %>
 <%--<%@ MasterType virtualpath="~/MasterPages/GCIntranet.Master" %>--%>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>Quisque porta tortor mauris, id convallis risus suscipit tincidunt. Suspendisse id libero commodo, fringilla urna a, consequat tellus. Proin vitae felis ut arcu euismod mollis. Ut hendrerit sapien eu vulputate blandit. Phasellus turpis neque, venenatis et dignissim id, tristique nec dolor. Integer scelerisque quam arcu, in vulputate purus aliquam sed. Morbi viverra aliquam risus, a hendrerit lectus facilisis ac.</p>

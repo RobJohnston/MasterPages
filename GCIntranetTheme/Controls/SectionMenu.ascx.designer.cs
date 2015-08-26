@@ -10,7 +10,7 @@
 namespace GCIntranetTheme.Controls {
     
     
-    public partial class SecondaryMenu {
+    public partial class SectionMenu {
         
         /// <summary>
         /// SiteMapDataSource1 control.

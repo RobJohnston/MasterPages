@@ -44,11 +44,15 @@
 </asp:Content>
 
 <asp:Content ID="ContentMain" ContentPlaceHolderID="Main" runat="server">
-<main role="main" property="mainContentOfPage" class="container">
+<asp:Panel ID="container" runat="server">
+<asp:Panel ID="row" runat="server">
+<main role="main" property="mainContentOfPage" class="container" id="main" runat="server">
 <h1 id="wb-cont" property="name"><%=Page.Title %></h1>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
     <uc1:DateModified runat="server" id="DateModified" />
 </main>
+</asp:Panel>
+</asp:Panel>
 </asp:Content>
 
 <asp:Content ID="ContentFooter" ContentPlaceHolderID="Footer" runat="server">

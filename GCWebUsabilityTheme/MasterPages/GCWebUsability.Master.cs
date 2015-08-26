@@ -50,6 +50,17 @@ namespace GCWebUsabilityTheme.MasterPages
             {
                 LanguageSelection.Visible = false;
             }
+
+            //Show a section menu if required.
+            if (((BasePage)Page).ShowSectionMenu)
+            {
+                container.CssClass = "container";
+                row.CssClass = "row";
+                main.Attributes["class"] = "col-md-9 col-md-push-3";
+
+                GCWebUsabilityTheme.Controls.SectionMenu SectionMenu1 = (GCWebUsabilityTheme.Controls.SectionMenu)LoadControl("~/Controls/SectionMenu.ascx") as GCWebUsabilityTheme.Controls.SectionMenu;
+                row.Controls.Add(SectionMenu1);
+            }
         }
 
         protected string GetSignatureImage()

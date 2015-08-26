@@ -193,6 +193,30 @@ namespace GCWebUsabilityTheme
         }
 
         /// <summary>
+        /// Should the left-side secondary menu be shown?
+        /// </summary>
+        public virtual bool ShowSectionMenu
+        {
+            get
+            {
+                string str = ViewState["ShowSectionMenu"] as string;
+                if (str == null)
+                {
+                    WetBoewConfiguration config = WetBoewConfiguration.GetConfiguration();
+                    return config.ShowSectionMenu;
+                }
+                else
+                {
+                    return bool.Parse(str);
+                }
+            }
+            set
+            {
+                ViewState["ShowSectionMenu"] = value.ToString();
+            }
+        }
+
+        /// <summary>
         /// The topic of the resource.
         /// </summary>
         public virtual string Subject

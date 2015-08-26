@@ -42,13 +42,13 @@ namespace GCWebTheme.MasterPages
             {
                 string textDirection = "ltr";
 
-                //Read the text direction from the custom web.config section.
-                WetBoewConfiguration config = WetBoewConfiguration.GetConfiguration();
+                ////Read the text direction from the custom web.config section.
+                //WetBoewConfiguration config = WetBoewConfiguration.GetConfiguration();
 
-                if (config != null)
-                {
-                    textDirection = config.TextDirection;
-                }
+                //if (config != null)
+                //{
+                //    textDirection = config.ShowSectionMenu;
+                //}
 
                 return textDirection;
             }

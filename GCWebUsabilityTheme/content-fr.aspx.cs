@@ -18,6 +18,7 @@ namespace GCWebUsabilityTheme
             //base.Modified = "2015-07-29";                                             //Defaults to file system last write time date.
             base.Creator = "Gouvernement du Canada, Citoyenneté et Immigration Canada"; //Default defined in BasePage.cs
             base.Subject = "Citoyenneté; Immigration; Multiculturalisme";               //Default defined in BasePage.cs
+            //base.ShowSectionMenu = false;                                             //Default defined in web.config.
         }
     }
 }

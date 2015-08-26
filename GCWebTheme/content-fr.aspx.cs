@@ -13,7 +13,9 @@ namespace GCWebTheme
         {
             Page.Title = "Page de contenu";
             Page.MetaDescription = "La Boîte à outils de l’expérience Web (BOEW) rassemble différents composants réutilisables et prêts-à-utiliser pour la conception et la mise à jour de sites Web innovateurs qui sont à la fois accessibles, conviviaux et interopérables. Tous ces composants réutilisables sont des logiciels libres mis à la disposition des ministères et des collectivités Web externes.";
-            //base.DateModified = "2015-07-29";
+            base.Issued = "2015-08-21";
+            //base.Modified = "2015-08-26";
+            //base.ShowSectionMenu = false;
         }
     }
 }

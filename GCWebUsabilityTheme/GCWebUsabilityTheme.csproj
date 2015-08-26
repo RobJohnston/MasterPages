@@ -1666,13 +1666,6 @@
     <Compile Include="Controls\TopOfPage.ascx.designer.cs">
       <DependentUpon>TopOfPage.ascx</DependentUpon>
     </Compile>
-    <Compile Include="MasterPages\GCWebUsability-SectionMenu.master.cs">
-      <DependentUpon>GCWebUsability-SectionMenu.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MasterPages\GCWebUsability-SectionMenu.master.designer.cs">
-      <DependentUpon>GCWebUsability-SectionMenu.master</DependentUpon>
-    </Compile>
     <Compile Include="MasterPages\GCWebUsability.master.cs">
       <DependentUpon>GCWebUsability.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1713,7 +1706,6 @@
     <Content Include="SiteMaps\Footer.fr.sitemap" />
     <Content Include="SiteMaps\Footer2.sitemap" />
     <Content Include="SiteMaps\Footer2.fr.sitemap" />
-    <Content Include="MasterPages\GCWebUsability-SectionMenu.master" />
     <Content Include="MasterPages\Splash.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

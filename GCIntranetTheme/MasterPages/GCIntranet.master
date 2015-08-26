@@ -33,7 +33,7 @@
 <asp:HyperLink ID="HyperLinkSiteTitle" runat="server" NavigateUrl="http://wet-boew.github.io/v4.0-ci/index-en.html">
 <span>Web Experience Toolkit</span>
 </asp:HyperLink>
-<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="./wet-v4/dist/assets/wmms-intra.svg" aria-label="<%=Localization.TemplateStrings.tmpl_gc_wmms %>"></object>
+<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="./wet-v4/assets/wmms-intra.svg" aria-label="<%=Localization.TemplateStrings.tmpl_gc_wmms %>"></object>
 </div>
     <uc1:Search runat="server" id="Search" />
 </div>
@@ -46,11 +46,15 @@
 </asp:Content>
 
 <asp:Content ID="ContentMain" runat="server" ContentPlaceHolderID="Main">
-<main role="main" property="mainContentOfPage" class="container">
+<asp:Panel ID="container" runat="server">
+<asp:Panel ID="row" runat="server">
+<main role="main" property="mainContentOfPage" class="container" id="main" runat="server">
 <h1 id="wb-cont" property="name"><%=Page.Title %></h1>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
     <uc1:DateModified runat="server" id="DateModified" />
 </main>
+</asp:Panel>
+</asp:Panel>
 </asp:Content>
 
 <asp:Content ID="ContentFooter" runat="server" ContentPlaceHolderID="Footer">

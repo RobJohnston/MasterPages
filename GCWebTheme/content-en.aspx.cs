@@ -14,7 +14,8 @@ namespace GCWebTheme
             Page.Title = "Content page 1";
             Page.MetaDescription = "Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities";
             base.Issued = "2015-08-21";
-            //base.Modified = "2015-07-29";
+            //base.Modified = "2015-08-26";
+            //base.ShowSectionMenu = false;
         }
     }
 }

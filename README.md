@@ -47,10 +47,9 @@ For using a large and complex codebase with Team Foundation Version Control, see
 
 ## TODO
 
-- [ ] Fix Web Usability theme's splash page (uses different theme css files).  All splash pages have an incorrect 'lang="en"' on all sections.
+- [ ] Maybe add the WET folder as a configurable setting in the web.config file.
 - [ ] Maybe put more of the Canada.ca theme's footer links into a sitemap (in case they change, it would be an easier fix)?
 - [ ] Show SubSite user control when appropriate to do so (only for the GC Intranet theme).
 - [ ] Search the code for "TODO" and "REVIEW" to see what items are outstanding.
-- [ ] It would be great if the *-SectionMenu.master page could be merged into the regular master page and the menu visibility controlled per page and/or directory.
 - [ ] There may be more properties to add to BasePage (e.g., for metadata).  See http://dublincore.org/documents/dcmi-terms/.
 - [ ] A few more nested master pages, especially for the Canada.ca theme, could be built as required.  See http://wet-boew.github.io/themes-dist/GCWeb/index-en.html.  Most, if not all, could be nested off of GCWeb.master.

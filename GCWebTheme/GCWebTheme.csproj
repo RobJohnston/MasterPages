@@ -1722,13 +1722,6 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MasterPages\GCWeb-SectionMenu.master.cs">
-      <DependentUpon>GCWeb-SectionMenu.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MasterPages\GCWeb-SectionMenu.master.designer.cs">
-      <DependentUpon>GCWeb-SectionMenu.master</DependentUpon>
-    </Compile>
     <Compile Include="MasterPages\GCWeb.master.cs">
       <DependentUpon>GCWeb.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1762,7 +1755,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPages\GCWeb.master" />
-    <Content Include="MasterPages\GCWeb-SectionMenu.master" />
     <Content Include="SiteMaps\Web.fr.sitemap">
       <SubType>Designer</SubType>
     </Content>

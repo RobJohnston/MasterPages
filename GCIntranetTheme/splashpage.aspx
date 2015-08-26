@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/Splash.master" AutoEventWireup="true" CodeBehind="splashpage.aspx.cs" Inherits="GCIntranetTheme.splashpage" %>
 <asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolderLogo">
-    <object type="image/svg+xml" tabindex="-1" role="img" data="/wet-v4/dist/theme-gc-intranet/assets/logo.svg" aria-label="Web Experience Toolkit"></object>
+    <object type="image/svg+xml" tabindex="-1" role="img" data="/wet-v4/theme-gc-intranet/assets/logo.svg" aria-label="Web Experience Toolkit"></object>
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
