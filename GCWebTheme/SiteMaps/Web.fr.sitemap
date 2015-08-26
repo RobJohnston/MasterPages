@@ -2,7 +2,7 @@
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="false" >
   <siteMapNode url="~/index-fr.aspx" title="Accueil" description="">
     <siteMapNode url="~/content-fr.aspx" title="Page de contenu" description="">
-      <siteMapNode url="link1" title="Lien 1" description="">
+      <siteMapNode url="~/video-fr.aspx" title="Exemple de vidéo" description="">
         <siteMapNode url="link1a" title="Test1A" description="" />
         <siteMapNode url="link1b" title="Test1B" description="" />
       </siteMapNode>

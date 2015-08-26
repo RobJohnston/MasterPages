@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.IO;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Web;
@@ -26,14 +24,32 @@ namespace GCWebTheme
 
             if (m.Success)
             {
-                switch (m.Groups[1].Value)
+                string lang = m.Groups[1].Value;
+
+                switch (lang)
                 {
+                    case "e":
+                    case "en":
+                    case "eng":
+                        userCulture = "en-ca";
+                        break;
+                    case "f":
                     case "fr":
                     case "fra":
                         userCulture = "fr-ca";
                         break;
                     default:
-                        userCulture = "en-ca";
+                        // Try something generalized (e.g. "es-ES").
+                        int langLength = (m.Groups[1].Value.Length);
+
+                        if (langLength == 2)
+                        {
+                            userCulture = string.Format("{0}-{1}", lang, lang.ToUpper());
+                        }
+                        else
+                        {
+                            userCulture = "en-ca";
+                        }
                         break;
                 }
 
@@ -54,7 +70,7 @@ namespace GCWebTheme
                 string str = ViewState["PageCreator"] as string;
                 if (str == null)
                 {
-                    //REVIEW:  Edit as appropriate.
+                    //REVIEW:  Edit as appropriate.  Should this be in the custom web.config section?
                     if (this.Language == "fr")
                     {
                         return "Gouvernement du Canada, Citoyenneté et Immigration Canada";
@@ -78,6 +94,9 @@ namespace GCWebTheme
         /// <summary>
         /// Date of creation of the resource.
         /// </summary>
+        /// <remarks>
+        /// Default is file system's creation date.
+        /// </remarks>
         public virtual string Created
         {
             get
@@ -100,6 +119,9 @@ namespace GCWebTheme
         /// <summary>
         /// Date on which the resource was changed.
         /// </summary>
+        /// <remarks>
+        /// Default is file system's last write time date.
+        /// </remarks>
         public virtual string Modified
         {
             get
@@ -123,8 +145,9 @@ namespace GCWebTheme
         /// Date of formal issuance (e.g., publication) of the resource.
         /// </summary>
         /// <remarks>
-        /// Defaults to Date Created.
+        /// Default is Created date.
         /// </remarks>
+        /// <see cref="Created"/>
         public virtual string Issued
         {
             get
@@ -148,6 +171,9 @@ namespace GCWebTheme
         /// <summary>
         /// A language of the resource.
         /// </summary>
+        /// <remarks>
+        /// Two-letter language. Default is English ("en").
+        /// </remarks>
         public virtual string Language
         {
             get
@@ -155,16 +181,7 @@ namespace GCWebTheme
                 string str = ViewState["PageLanguage"] as string;
                 if (str == null)
                 {
-                    string rawUrl = Request.RawUrl;
-
-                    if (rawUrl.Contains("-fr.") || rawUrl.Contains("-fra."))
-                    {
-                        return "fr";
-                    }
-                    else
-                    {
-                        return "en";
-                    }
+                    return Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
                 }
                 else
                     return str;

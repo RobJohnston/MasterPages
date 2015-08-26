@@ -22,12 +22,11 @@ namespace GCWebUsabilityTheme
             //Given an arbitrary page such as "/SomeDir/SomePage-fra.aspx?id=123",
             //the above pattern should find 1 group: "fra".
 
-            //TODO:  Can this be generalized for all languages using 
-            //Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName or 
-            //Thread.CurrentThread.CurrentUICulture.ThreeLetterISOLanguageName?
             if (m.Success)
             {
-                switch (m.Groups[1].Value)
+                string lang = m.Groups[1].Value;
+
+                switch (lang)
                 {
                     case "e":
                     case "en":
@@ -40,7 +39,17 @@ namespace GCWebUsabilityTheme
                         userCulture = "fr-ca";
                         break;
                     default:
-                        userCulture = "en-ca";
+                        // Try something generalized (e.g. "es-ES").
+                        int langLength = (m.Groups[1].Value.Length);
+
+                        if (langLength == 2)
+                        {
+                            userCulture = string.Format("{0}-{1}", lang, lang.ToUpper());
+                        }
+                        else
+                        {
+                            userCulture = "en-ca";
+                        }
                         break;
                 }
 
@@ -172,16 +181,7 @@ namespace GCWebUsabilityTheme
                 string str = ViewState["PageLanguage"] as string;
                 if (str == null)
                 {
-                    string rawUrl = Request.RawUrl;
-
-                    if (rawUrl.Contains("-fr.") || rawUrl.Contains("-fra."))
-                    {
-                        return "fr";
-                    }
-                    else
-                    {
-                        return "en";
-                    }
+                    return Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
                 }
                 else
                     return str;

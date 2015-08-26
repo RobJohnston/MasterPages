@@ -76,6 +76,8 @@
     <Content Include="default.aspx" />
     <Content Include="partners\index-en.aspx" />
     <Content Include="partners\index-fr.aspx" />
+    <Content Include="video-en.aspx" />
+    <Content Include="video-fr.aspx" />
     <Content Include="Web.config" />
     <Content Include="wet-v4\dist\404-en-fr.html" />
     <Content Include="wet-v4\dist\404-en.html" />
@@ -1722,6 +1724,13 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MasterPages\GCWeb-Video.master.cs">
+      <DependentUpon>GCWeb-Video.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\GCWeb-Video.master.designer.cs">
+      <DependentUpon>GCWeb-Video.master</DependentUpon>
+    </Compile>
     <Compile Include="MasterPages\GCWeb.master.cs">
       <DependentUpon>GCWeb.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1751,6 +1760,20 @@
     <Compile Include="MasterPages\WET-BOEW.Master.designer.cs">
       <DependentUpon>Wet-Boew.Master</DependentUpon>
     </Compile>
+    <Compile Include="video-en.aspx.cs">
+      <DependentUpon>video-en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="video-en.aspx.designer.cs">
+      <DependentUpon>video-en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="video-fr.aspx.cs">
+      <DependentUpon>video-fr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="video-fr.aspx.designer.cs">
+      <DependentUpon>video-fr.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WetBoewConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1765,6 +1788,7 @@
     <Content Include="SiteMaps\Footer.fr.sitemap" />
     <Content Include="SiteMaps\Header.sitemap" />
     <Content Include="SiteMaps\Header.fr.sitemap" />
+    <Content Include="MasterPages\GCWeb-Video.master" />
     <None Include="partners\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
