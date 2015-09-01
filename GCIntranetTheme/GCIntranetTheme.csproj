@@ -63,8 +63,8 @@
   <ItemGroup>
     <Content Include="content-en.aspx" />
     <Content Include="content-fr.aspx" />
-    <Content Include="content-secmenu-en.aspx" />
-    <Content Include="content-secmenu-fr.aspx" />
+    <Content Include="SubSite\content-secmenu-en.aspx" />
+    <Content Include="SubSite\content-secmenu-fr.aspx" />
     <Content Include="Controls\Breadcrumb.ascx" />
     <Content Include="Controls\DateModified.ascx" />
     <Content Include="Controls\Footer.ascx" />
@@ -1586,18 +1586,18 @@
     <Compile Include="content-fr.aspx.designer.cs">
       <DependentUpon>content-fr.aspx</DependentUpon>
     </Compile>
-    <Compile Include="content-secmenu-en.aspx.cs">
+    <Compile Include="SubSite\content-secmenu-en.aspx.cs">
       <DependentUpon>content-secmenu-en.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="content-secmenu-en.aspx.designer.cs">
+    <Compile Include="SubSite\content-secmenu-en.aspx.designer.cs">
       <DependentUpon>content-secmenu-en.aspx</DependentUpon>
     </Compile>
-    <Compile Include="content-secmenu-fr.aspx.cs">
+    <Compile Include="SubSite\content-secmenu-fr.aspx.cs">
       <DependentUpon>content-secmenu-fr.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="content-secmenu-fr.aspx.designer.cs">
+    <Compile Include="SubSite\content-secmenu-fr.aspx.designer.cs">
       <DependentUpon>content-secmenu-fr.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controls\Breadcrumb.ascx.cs">
@@ -1715,6 +1715,9 @@
     <Content Include="SiteMaps\Header.sitemap" />
     <Content Include="SiteMaps\Header.fr.sitemap" />
     <Content Include="MasterPages\Splash.master" />
+    <Content Include="SubSite\Web.sitemap" />
+    <Content Include="SubSite\Web.config" />
+    <Content Include="SubSite\Web.fr.sitemap" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

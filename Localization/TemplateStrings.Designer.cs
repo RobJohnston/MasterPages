@@ -133,6 +133,24 @@ namespace Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Secondary menu.
+        /// </summary>
+        public static string tmpl_sec_menu {
+            get {
+                return ResourceManager.GetString("tmpl-sec-menu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Section menu.
+        /// </summary>
+        public static string tmpl_section_menu {
+            get {
+                return ResourceManager.GetString("tmpl-section-menu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Skip to &quot;About this site&quot;.
         /// </summary>
         public static string tmpl_skip_about_site {

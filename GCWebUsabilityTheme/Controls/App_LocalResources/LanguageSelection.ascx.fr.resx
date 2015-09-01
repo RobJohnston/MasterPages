@@ -117,56 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="tmpl-about-site" xml:space="preserve">
-    <value>About this site</value>
+  <data name="HyperLink1Resource1.NavigateUrl" xml:space="preserve">
+    <value>http://www.canada.ca/fr/index.html</value>
   </data>
-  <data name="tmpl-date-mod" xml:space="preserve">
-    <value>Date modified:</value>
+  <data name="HyperLink1Resource1.Text" xml:space="preserve">
+    <value>Canada.ca</value>
   </data>
-  <data name="tmpl-gc-foot" xml:space="preserve">
-    <value>Government of Canada footer</value>
+  <data name="HyperLink2Resource1.NavigateUrl" xml:space="preserve">
+    <value>http://www.canada.ca/fr/services/index.html</value>
   </data>
-  <data name="tmpl-gc-sig" xml:space="preserve">
-    <value>Government of Canada</value>
+  <data name="HyperLink2Resource1.Text" xml:space="preserve">
+    <value>Services</value>
   </data>
-  <data name="tmpl-gc-wmms" xml:space="preserve">
-    <value>Symbol of the Government of Canada</value>
+  <data name="HyperLink3Resource1.NavigateUrl" xml:space="preserve">
+    <value>http://www.canada.ca/fr/gouv/min/index.html</value>
   </data>
-  <data name="tmpl-lang-select" xml:space="preserve">
-    <value>Language selection</value>
-  </data>
-  <data name="tmpl-search" xml:space="preserve">
-    <value>Search</value>
-  </data>
-  <data name="tmpl-search-site" xml:space="preserve">
-    <value>Search website</value>
-  </data>
-  <data name="tmpl-sec-menu" xml:space="preserve">
-    <value>Secondary menu</value>
-  </data>
-  <data name="tmpl-section-menu" xml:space="preserve">
-    <value>Section menu</value>
-  </data>
-  <data name="tmpl-skip-about-site" xml:space="preserve">
-    <value>Skip to "About this site"</value>
-  </data>
-  <data name="tmpl-skip-cont" xml:space="preserve">
-    <value>Skip to main content</value>
-  </data>
-  <data name="tmpl-skip-section" xml:space="preserve">
-    <value>Skip to section menu</value>
-  </data>
-  <data name="tmpl-terms" xml:space="preserve">
-    <value>Terms and conditions</value>
-  </data>
-  <data name="tmpl-terms-of-use" xml:space="preserve">
-    <value>Terms and conditions of use</value>
-    <comment>Splash page</comment>
-  </data>
-  <data name="tmpl-topics-menu" xml:space="preserve">
-    <value>Topics menu</value>
-  </data>
-  <data name="tmpl-transparency" xml:space="preserve">
-    <value>Transparency</value>
+  <data name="HyperLink3Resource1.Text" xml:space="preserve">
+    <value>Ministères</value>
   </data>
 </root>

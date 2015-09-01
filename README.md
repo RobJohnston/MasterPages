@@ -47,6 +47,19 @@ The simplest solution may be to make all other projects sub-projects of a master
 For using a large and complex codebase with Team Foundation Version Control, see "Optimize your workspace" - https://msdn.microsoft.com/en-us/library/ms181378.aspx
 
 
+## Using the item template
+
+1.  Find where the user defined templates are located (typically \\Homedir2\Data6\<username.\Documents\Visual Studio 2013\Templates)
+2.  Under the subdirectory "Visual C#", create the folder "web" if it doesn't already exist.  Then create "WET-BOEW" under that.
+3.  Move the WETWebForm.zip file into the new "WET-BOEW" folder.
+4.  Verify it works by adding a new item to a project.  Under "Web" there should be a WET-BOEW option that allows "WET WebForm" as an item choice.
+
+
+## Known Issues
+
+* Secondary menus support two levels in practice but only one level in the example templates.  This is still being discussed on GitHub.
+
+
 ## TODO
 
 - [ ] Secondary menu should be able to handle two levels.

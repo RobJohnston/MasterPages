@@ -141,6 +141,12 @@
   <data name="tmpl-search-site" xml:space="preserve">
     <value>Recherchez le site Web</value>
   </data>
+  <data name="tmpl-sec-menu" xml:space="preserve">
+    <value>Menu secondaire</value>
+  </data>
+  <data name="tmpl-section-menu" xml:space="preserve">
+    <value>Menu de la section</value>
+  </data>
   <data name="tmpl-skip-about-site" xml:space="preserve">
     <value>Passer à «&amp;#160;À propos de ce site&amp;#160;»</value>
   </data>

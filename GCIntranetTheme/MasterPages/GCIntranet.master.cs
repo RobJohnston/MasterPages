@@ -69,11 +69,11 @@ namespace GCIntranetTheme.MasterPages
 
             if (lang == "fr")
             {
-                return "./wet-v4/assets/sig-blk-fr.svg";
+                return "/wet-v4/assets/sig-blk-fr.svg";
             }
             else
             {
-                return "./wet-v4/assets/sig-blk-en.svg";
+                return "/wet-v4/assets/sig-blk-en.svg";
             }
         }
     }

@@ -33,7 +33,7 @@
 <asp:HyperLink ID="HyperLinkSiteTitle" runat="server" NavigateUrl="http://wet-boew.github.io/v4.0-ci/index-en.html">
 <span>Web Experience Toolkit</span>
 </asp:HyperLink>
-<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="./wet-v4/assets/wmms-intra.svg" aria-label="<%=Localization.TemplateStrings.tmpl_gc_wmms %>"></object>
+<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="/wet-v4/assets/wmms-intra.svg" aria-label="<%=Localization.TemplateStrings.tmpl_gc_wmms %>"></object>
 </div>
     <uc1:Search runat="server" id="Search" />
 </div>

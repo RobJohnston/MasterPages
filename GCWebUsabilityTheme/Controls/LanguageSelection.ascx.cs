@@ -24,6 +24,13 @@ namespace GCWebUsabilityTheme.Controls
                 dt.Columns.Add("name", typeof(string));
                 dt.Columns.Add("page", typeof(string));
 
+                int languageCount = myLanguagesSection.Count;
+
+                if (languageCount <= 1)
+                {
+                    Repeater1.Visible = false;
+                }
+
                 for (int i = 0; i < myLanguagesSection.Count; i++)
                 {
                     string abbr = myLanguagesSection[i].Abbr;

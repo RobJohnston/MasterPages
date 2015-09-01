@@ -43,14 +43,6 @@ namespace GCWebUsabilityTheme.MasterPages
                 Search.Visible = false;
             }
 
-            //Hide the language selection link(s) if the WetBoewGroup/WetBoew/Languages section only has one language defined.
-            bool showLanguage = (config.Languages.Count > 1 ? true : false);
-
-            if (!showLanguage)
-            {
-                LanguageSelection.Visible = false;
-            }
-
             //Show a section menu if required.
             if (((BasePage)Page).ShowSectionMenu)
             {
