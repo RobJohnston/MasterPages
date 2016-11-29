@@ -24,7 +24,7 @@ namespace GCWebTheme.Controls
             get
             {
                 //REVIEW:  Should this be added to the custom config section of web.config?
-                return string.Format("/wet-v4/dist/ajax/sitemenu-{0}.html", ((BasePage)Page).Language);
+                return string.Format("/wet-v4/GCWeb/ajax/sitemenu-{0}.html", ((BasePage)Page).Language);
             }
         }
     }

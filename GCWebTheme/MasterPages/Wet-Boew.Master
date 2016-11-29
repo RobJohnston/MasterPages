@@ -21,21 +21,21 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 </asp:ContentPlaceHolder>
 <!-- Meta data-->
 <!--[if gte IE 9 | !IE ]><!-->
-<link href="/wet-v4/dist/assets/favicon.ico" rel="icon" type="image/x-icon">
-<link rel="stylesheet" href="/wet-v4/dist/css/wet-boew.min.css">
+<link href="/wet-v4/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="/wet-v4/GCWeb/css/wet-boew.min.css">
 <!--<![endif]-->
-<link rel="stylesheet" href="/wet-v4/dist/css/theme.min.css">
+<link rel="stylesheet" href="/wet-v4/GCWeb/css/theme.min.css">
 <!--[if lt IE 9]>
-<link href="/wet-v4/dist/assets/favicon.ico" rel="shortcut icon" />
-<link rel="stylesheet" href="/wet-v4/dist/css/ie8-wet-boew.min.css" />
+<link href="/wet-v4/GCWeb/assets/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="/wet-v4/GCWeb/css/ie8-wet-boew.min.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="/wet-v4/dist/js/ie8-wet-boew.min.js"></script>
+<script src="/wet-v4/wet-boew/js/ie8-wet-boew.min.js"></script>
 <![endif]-->
 <!--[if lte IE 9]>
 
 
 <![endif]-->
-<noscript><link rel="stylesheet" href="/wet-v4/dist/css/noscript.min.css" /></noscript>
+<noscript><link rel="stylesheet" href="/wet-v4/wet-boew/css/noscript.min.css" /></noscript>
 <asp:ContentPlaceHolder ID="Head" runat="server" />
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
@@ -45,11 +45,11 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <asp:ContentPlaceHolder ID="Footer" runat="server" />
 <!--[if gte IE 9 | !IE ]><!-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="/wet-v4/dist/js/wet-boew.min.js"></script>
+<script src="/wet-v4/wet-boew/js/wet-boew.min.js"></script>
 <!--<![endif]-->
 <!--[if lt IE 9]>
 <script src="./js/ie8-wet-boew2.min.js"></script>
 <![endif]-->
-<script src="/wet-v4/dist/js/theme.min.js"></script>
+<script src="/wet-v4/GCWeb/js/theme.min.js"></script>
 </body>
 </html>

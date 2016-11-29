@@ -154,7 +154,7 @@
     <value />
   </data>
   <data name="HyperLink3BResource1.Text" xml:space="preserve">
-    <value>Departments &amp; agencies</value>
+    <value>Departments and agencies</value>
   </data>
   <data name="HyperLink3BResource1.ToolTip" xml:space="preserve">
     <value />
@@ -172,13 +172,13 @@
     <value />
   </data>
   <data name="HyperLink3EResource1.Text" xml:space="preserve">
-    <value>Public service &amp; military</value>
+    <value>Public service and military</value>
   </data>
   <data name="HyperLink3EResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="HyperLink3FResource1.Text" xml:space="preserve">
-    <value>Policies, regulations &amp; laws</value>
+    <value>Policies, regulations and laws</value>
   </data>
   <data name="HyperLink3FResource1.ToolTip" xml:space="preserve">
     <value />
@@ -196,7 +196,7 @@
     <value />
   </data>
   <data name="HyperLink3IResource1.Text" xml:space="preserve">
-    <value>Statistics &amp; data</value>
+    <value>Statistics and data</value>
   </data>
   <data name="HyperLink3IResource1.ToolTip" xml:space="preserve">
     <value />
@@ -226,7 +226,7 @@
     <value />
   </data>
   <data name="HyperLink4DResource1.Text" xml:space="preserve">
-    <value>Terms &amp; conditions</value>
+    <value>Terms and conditions</value>
   </data>
   <data name="HyperLink4DResource1.ToolTip" xml:space="preserve">
     <value />
@@ -238,13 +238,13 @@
     <value />
   </data>
   <data name="HyperLinkFeedbackResource1.Text" xml:space="preserve">
-    <value>&lt;img src="/wet-v4/dist/assets/feedback.png" alt="Feedback about this Web site"&gt;</value>
+    <value>&lt;img src="/wet-v4/GCWeb/assets/feedback.png" alt="Feedback about this Web site"&gt;</value>
   </data>
   <data name="HyperLinkFeedbackResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="HyperLinkMobileResource1.Text" xml:space="preserve">
-    <value>&lt;img src="/wet-v4/dist/assets/mobile.png" alt="Mobile centre"&gt;</value>
+    <value>&lt;img src="/wet-v4/GCWeb/assets/mobile.png" alt="Mobile centre"&gt;</value>
   </data>
   <data name="HyperLinkMobileResource1.ToolTip" xml:space="preserve">
     <value />
@@ -256,7 +256,7 @@
     <value />
   </data>
   <data name="HyperLinkSocialResource1.Text" xml:space="preserve">
-    <value>&lt;img src="/wet-v4/dist/assets/social.png" alt="Social media"&gt;</value>
+    <value>&lt;img src="/wet-v4/GCWeb/assets/social.png" alt="Social media"&gt;</value>
   </data>
   <data name="HyperLinkSocialResource1.ToolTip" xml:space="preserve">
     <value />
@@ -283,6 +283,6 @@
     <value>About this site</value>
   </data>
   <data name="LocalizeWordMarkResource1.Text" xml:space="preserve">
-    <value>&lt;object type="image/svg+xml" tabindex="-1" role="img" data="/wet-v4/dist/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"&gt;&lt;/object&gt;</value>
+    <value>&lt;object type="image/svg+xml" tabindex="-1" role="img" data="/wet-v4/GCWeb/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"&gt;&lt;/object&gt;</value>
   </data>
 </root>

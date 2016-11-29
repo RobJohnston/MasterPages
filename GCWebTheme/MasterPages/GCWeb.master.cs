@@ -28,7 +28,7 @@ namespace GCWebTheme.MasterPages
                 feedback = "Feedback<span class=\"wb-inv\"> about this web site</span>";
             }
 
-            Home.Text = string.Format("<object type=\"image/svg+xml\" tabindex=\"-1\" data=\"/wet-v4/dist/assets/{0}\"></object><span class=\"wb-inv\"> {1}</span>", img, Localization.TemplateStrings.tmpl_gc_sig);
+            Home.Text = string.Format("<object type=\"image/svg+xml\" tabindex=\"-1\" data=\"/wet-v4/GCWeb/assets/{0}\"></object><span class=\"wb-inv\"> {1}</span>", img, Localization.TemplateStrings.tmpl_gc_sig);
             Feedback.Text = string.Format("<span class=\"glyphicon glyphicon-comment mrgn-rght-sm\"></span>{0}", feedback);
 
 
